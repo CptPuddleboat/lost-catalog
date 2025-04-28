@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ltcg_ballistic_shield",
+    "name": "Ballistic Shield",
+    "type": "Weapon",
+    "description": "A large slab of layersteel, with a viewport of bulletproof glass, and attachment points for the forearm of most modern military hardsuits. It's bulletproof to small-arms fire, and can help to withstand mech-scale weaponry.<br><br>You must take a weapon with the Sidearm tag as your second option. You gain +1 Armor, however, your pilot is always Slowed. You can detach the shield, thus losing the 1 Armor and Slowed, as a free action. The shield can be recovered and reattached during a Rest.",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 1
+      }
+    ],
+    "bonuses": [
+      {
+        "id": "pilot_armor",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "ltcg_dataknife",
+    "name": "Dataknife",
+    "type": "Gear",
+    "description": "This small vibroknife is built to interface with hostile system architecture and upload volatile intrusion packets. When you gain this knife, choose an Invade option you are licensed for. You gain the following option when you successfully JOCKEY:<ul><li>INVADE: Apply the chosen Invade option to the target.</li></ul>",
+    "tags": [
+      {
+        "id": "tg_gear"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "ltcg_personal_shield_generator",
+    "name": "Personal Shield Generator",
+    "type": "Gear",
+    "description": "A small high-velocity capacitance sparkshield, capable of turning a single powerful blow by dumping a repulsive charge at will. 1/mission, when hit by an attack while on foot, you can gain resistance to all damage, heat, and burn as a reaction. You can spend 1 repair from your mech during a Rest to recharge the generator, allowing it to be used again.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  }
+]

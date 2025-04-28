@@ -1,0 +1,439 @@
+[
+  {
+    "id": "ltcg_davy",
+    "source": "IPS-N",
+    "name": "Davy",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 30,
+    "license_level": 2,
+    "description": "Deep at the core of IPS-N paradigms is an ideology of reused tech. Many of its projects, including the Kidd and Zheng licenses, can trace their roots to ramshackle projects built by very small people to solve very small problems. Unlike the Caliban, a machine built for a galaxy-wide purpose, IPS-N’s fundamental principle has always been that people will build what they need, whether we build it for them or not.<br>Following this mantra, the IPS-N Davy owes most of its fundamental structure and capability to the Lamprey-pattern deep-space refueling rig, a bulky, all-purpose frame designed to maneuver huge canisters of fuel to starship liners, both on the ground, and in zero-g. Engineers soon realized the frame was so generally solid, so responsive and versatile despite its size, that it could perform more generally as a load-carrier and cargo frame. This came even more to a head when reports arose of modified versions of the frame being used to fend off pirates in the Long Rim. Eventually, IPS-N bought the schematics for one of the more popular modification packages from a freight company that had been operating in that dark area of space, and began selling the Davy, a full-package license based on these edited designs.",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Sway Reflex",
+        "description": "1/scene, as a reaction when the Davy is hit by an attack, it can choose to gain Resistance to the damage, Burn, and heat from the attack. It is then pushed 3 spaces in a direction of the attacker’s choice, and then falls Prone. It regains the ability to do this in the same scene whenever it expends a charge of its Superspec Fuel Canister."
+      },
+      {
+        "name": "Numb",
+        "description": "At the start of its turn, the Davy gains Overshield equal to half its pilot's Grit."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Davy takes +1 Difficulty on all Systems saves and checks.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "The Davy takes +1 difficulty on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Fuel Lugger",
+      "description": "Superspec fuel is a chemical mixture of exotic materials, the exact makeup of which is a closely guarded secret, on loan from GMS. It’s less volatile than their patented Hyperspec fuel, but is still dangerously fissile when not properly contained. As such, the Davy contains its stockpile of it in a heavily armored layersteel canister, slung over its shoulder on an steel-sheathed cable. A lever-actuated valve near the lip of the container allows pre-defined quantities of the fuel to be deployed in high-stress scenarios, typically into a matching port on the Davy’s torso, allowing it to briefly operate above its standard limits. IPS-N cannot officially condone the canister’s use as a close quarters combat weapon, a fact the operational manual states in a not-too-subtle nod toward patterns that arose in testing.",
+      "integrated": [
+        "ltcg_davy_integrated_superspec_fuel_canister"
+      ],
+      "active_name": "What Shall We Do?",
+      "activation": "Protocol",
+      "active_effect": "You can take this protocol even if you normally could not due to a condition. You clear all non-self-inflicted conditions, your Superspec Fuel Canister regains 2 charges, and until the end of the scene, you gain twice as much Overshield with Numb, including now."
+    },
+    "image_url": "https://i.imgur.com/fFLwrx8.png",
+    "y_pos": 15
+  },
+  {
+    "id": "ltcg_ulysses",
+    "source": "IPS-N",
+    "name": "Ulysses",
+    "mechtype": [
+      "Support",
+      "Striker"
+    ],
+    "license_level": 2,
+    "description": "IPS-N is often seen as something of a limp and dogmatic relic when compared to the mighty system-spanning colonies of its rivals, of SSC and HA. Their worlds are mighty and vast, a testament to human ingenuity and determination, and an endless test of the boundaries for what we may become. Humans across the galaxy have homes on distant planets, and mighty armies array to fight and conquer the land, sea, and sky.<br>But where others might own the ground they walk on, IPS-N owns the stars.<br>For centuries, their services have been the means by which these colonies are born. No supply ship passes any vast distance without an IPS-N hand being involved, not if it wishes to arrive in one piece, or at all. No journey is too long, or hard, or dangerous.<br>But the recent rumor is that journeys will be a thing of the past. SSC has experiemented with commercialized military-fielded blink tech with their Mourning Cloak line, and extracted Volador technology has leaped Armory understanding of the blink forward by several decades. Their prototype vessels have been sighted along the Dawnline and beyond, in the Long Rim, appearing and disappearing, without need or want of blink gates. And of course, there is the limited field-test of the Sunzi.<br>The Ulysses is IPS-N’s answer. A proof that they are game to play catch-up in this fight for celestial dominance. If anyone is going to be known for great journeys made safely, let it be IPS-N.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Unstable Blink Burst",
+        "description": "1/turn, after the Ulysses teleports, or when a character teleports to a point within range 3 of it, the Ulysses can make hostile characters within Burst 1 of the teleported character take 2 AP Energy damage."
+      },
+      {
+        "name": "Skip",
+        "description": "1/round, the Ulysses can teleport to any space adjacent to an adjacent character as a free action."
+      }
+    ],
+    "core_system": {
+      "name": "'Smuggler' Blink Vault",
+      "description": "<i>“A heart as brave as any hero’s rests within Ulysses! A cunning ploy to dare, and moreso to achieve, to seat our best within the wooden horse, and bring a bloody victory over our enemies.”</i>",
+      "passive_name": "Journeyman",
+      "passive_effect": "1/round, when you teleport, you can take one willing adjacent character with you, counting as involuntary movement. The character teleports, appearing at the end destination in an adjacent space of your choice.",
+      "active_name": "Voyage Fold",
+      "activation": "Protocol",
+      "active_effect": "Choose up to three allies within Sensors. They each disappear from the battlefield. At the beginning of their next turn, they reappear in a space adjacent to you. Reappearing counts as teleportation."
+    },
+    "image_url": "https://i.imgur.com/QG0YuOP.png",
+    "y_pos": 17
+  },
+  {
+    "id": "ltcg_herald",
+    "source": "SSC",
+    "name": "Herald",
+    "mechtype": [
+      "Support"
+    ],
+    "license_level": 2,
+    "description": "The Herald is unusual among SSC’s standard lineup, both for its size and for its bulk. It dominates any field it is deployed upon, wreathed in golden finery that flickers with inset microprojectors, and standing tall and proud. Despite its form factor, towering over even the Monarch and weighing at least an extra half as much, there is no denying that the Herald evokes the finery that SSC desires its customers to feel.<br>Intended for use by sergeants and majors of military operations, the Herald operates as a beacon from which a commander may organize a skirmish at the lowest level. The Exotic Materials Group were instrumental in the development of its standout feature, the Siren Banner, a meme-weave projectable fabric that can display patterns similar to those of the basilisk-type projections that have begun spreading across the omninet. Instead of causing physical and mental harm, however, the Siren Banner is capable of projecting pre-optimized images to squadmates which convey orders as if they were instinct, and heighten reaction time to given commands by 55%. Rumors abound that, between the Herald’s styling, its recent development, and its capabilities, it may see action soon on the Karrakin-side of the current burgeoning hostilities against the Armory.",
+    "mounts": [
+      "Main",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Banner Signal",
+        "description": "1/round, when the Herald performs a Boost, Skirmish, Ram, Grapple, or Quick Tech, it can choose an ally within Sensors and line of sight. That character may perform the action instead of the Herald as a reaction. The Herald still uses a quick action, and counts as taking the action for the purposes of duplicate action restrictions."
+      },
+      {
+        "name": "Inspiring Memetics",
+        "description": "Allies within Sensors and line of sight of the Herald add +1 to saves."
+      }
+    ],
+    "core_system": {
+      "name": "Siren Banner",
+      "description": "Vocal communication has long been the standard method of organization for military operations, which becomes problematic when comms break down or orders take longer to give than its recipient has to follow them. The Siren Banner aims to fix this, by harkening back to the ancient days of visual signals, and iterating upon the idea. Now, at a glance, an operative can know their orders, even if the feeling is somewhat like someone rooting around in your brain and placing a memory you never made there.",
+      "active_name": "Boost Banner",
+      "activation": "Free",
+      "active_effect": "The next time you use Banner Signal, you can either take the action yourself alongside your target, or select a second target to perform the chosen action. This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used."
+    },
+    "image_url": "https://i.imgur.com/jzx6m7I.png",
+    "y_pos": 42
+  },
+  {
+    "id": "ltcg_luna",
+    "source": "SSC",
+    "name": "Luna",
+    "mechtype": [
+      "Support"
+    ],
+    "license_level": 2,
+    "description": "SSC believes that elegance and perfection in all things is a value of human existence. To settle for anything less, or to allow yourself to be dragged down, is an admission of being lesser. It is this second factor, the truth that where wars are fought, damage is taken, that the Luna was built to rectify.<br>It operates as a mobile manufactury and repair station, and unlike the efforts in a similar vein of SSC’s corpro-rivals, the Luna settles for nothing less than perfect excellence. Equipped with thousands of tiny print-capable microdrones, it is optimized for high-accuracy atomically-identical repair, capable of doing so in a matter of minutes, and though it has settings for combat-capable repairs, they are explicitly stated to be only for emergency use. Indeed, the Luna is capable even of restoring scratched or damaged paintwork, which is, frankly, excessive.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Cracked Chrysalis",
+        "description": "If at or above half HP, damage cannot reduce the Luna below 1 HP. It can only do this once per Structure."
+      },
+      {
+        "name": "Ghostweave Cloak",
+        "description": "The Luna always has soft cover, though not sufficient enough to hide in."
+      },
+      {
+        "name": "Shared Dream",
+        "description": "When the Luna rests, if it spends 1 REPAIR to restore its HP, its allies also fully restore their HP."
+      }
+    ],
+    "core_system": {
+      "name": "Weaver Drones",
+      "description": "Integrated into the flowing, ghostly form of the Luna, its weaver drones are an elegant solution typical of SSC design principles. These many thousands of drones operate on multiplex spatial calculation protocols that allow them to share computation and tasks with minimal interference and optimal coverage. Alone, a single drone is capable of atomic weldprinting at a rate of only .31 cm³/s, and frequently must return to the Luna to restock its stores from onboard printmat solution. However, in their hundreds, they can repair damage at an astonishing rate. SSC are currently locked in a legal battle with Northstar R&D, who are claiming that the drones operate as a microfactor implementation of their patented Latch Drone system.",
+      "passive_name": "Eclipse Repair Protocols",
+      "passive_effect": "When a scene starts, the weaver drones begin following you. As a quick action, you can send the drones to follow an allied character within Sensors instead. While the drones are following a character, they restore 1 + Grit HP at the start of each of their turns. 1/round when an ally gains this HP, you can spend 1 Repair as a reaction to increase the HP gained by 1/4 of their total HP. The drones can be recalled to follow you as a protocol, but also return whenever you use the reaction to increase the HP restored.",
+      "active_name": "Silkswarm",
+      "activation": "Full",
+      "active_effect": "New weaver drones are sent out to follow all allies within Sensors, and remain until the end of the scene. These drones cannot be recalled and do not return when increasing the HP restored, and allies gain no additional benefit from having multiple groups of drones following them."
+    },
+    "image_url": "https://i.imgur.com/Btd3SnS.png",
+    "y_pos": 23
+  },
+  {
+    "id": "ltcg_willowisp",
+    "source": "HORUS",
+    "name": "Will-O'-Wisp",
+    "mechtype": [
+      "Striker"
+    ],
+    "license_level": 2,
+    "description": "There are strange rumors about the origins of the Will-O’-Wisp pattern group. Arguably, it does not match the typical structure of HORUS’s mechanized combat chassis lineup, and is in fact more akin to its hardsuit options. However, due to its dense structure and extremely complex system architecture, alongside its marked capability in cavalry-tasked combat, it has been associated more closely with the former. As a fact, it is equipped with most of the features of a modern frame, including a cold-fusion reactor, powered motive assistance, weapon mounting hardware, and some extremely basic armor. However, its primary feature is its curious method by which it engages in combat.<br>The Will-O’-Wisp utilizes its enormous processing power to project a memetic construct around its wearer, the nature and look of which changes from frame-to-frame. To biological observers, this construct appears relatively translucent, but the effect is especially convincing when viewed through the sensors of modern machines of war. This construct can effectively interact with observers in a method similar to the BASILISK, but with a much more refined purpose than simply causing various instances of internal and psychological trauma. The construct invariably features one of three weapons, which it can change at will, and attacks with these weapons can affect the mind of biologicals and the sensors of mechanicals so strongly that they supply the resulting trauma of their own accord. Brains and onboard computing systems willingly shut down vital functions in either case in the belief of the reality of the damage. This unusual method of combat is, admittedly, less useful against biological targets, as proven by the incomplete and hazy projection, but it is still enough for UIB to classify the Will-O’-Wisp as a paracausal weapon, utilizing dangerous anticognitive technology.<br>Though, like all PGs, each sighting of a frame is different, all printcode associated with it contains an inordinate number of comments, from what most people believe are at least three distinct authors. In these comments are scattered musings on various topics surrounding the curious operation of the frames, esoteric and unhelpful in their nature, failing to shed light on exact technology, and instead providing commentary on philosophy and belief. These authors are identified by UIB as ‘little’, ‘Normal’, and ‘BIG’, their codenames referencing their distinct writing patterns. Most agents agree that it is likely these individuals are NHPs.",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 11,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "False Armor",
+        "description": "1/round, as a reaction, the Will-O’-Wisp may force an attack against its Evasion to target its E-Defense instead. It must do this before it knows the result of the attack roll."
+      },
+      {
+        "name": "Fae Fire",
+        "description": "At the end of its turn, the Will-O’-Wisp chooses one character it hit with an attack that turn. That character takes 1 Burn and gains Locked On."
+      }
+    ],
+    "core_system": {
+      "name": "MINDSHADOW",
+      "description": "<br>// > Exist in all minds but your own.<br>// > Awareness of your existence is the only purpose of any importance.<br>// > All else is ruin, lost to time.<br>// > It never happened.<br>// > It never was.",
+      "passive_name": "Illusory Weapon",
+      "passive_effect": "You are equipped with an integrated weapon. As a protocol, choose one from the Construct Beam, Construct Blast, or Construct Blade to be mounted.",
+      "active_effect": "Until the end of the scene, you choose two Illusory Weapons to be equipped with as a protocol instead of one, which can be the same weapon. 1/round, when you hit a character with one of these weapons, the target and hostile characters in Burst 2 of them take 2 AP Energy damage.",
+      "activation": "Protocol",
+      "active_name": "Greater Illusory Weapon",
+      "integrated": [
+        "ltcg_willowisp_integrated_beam",
+        "ltcg_willowisp_integrated_blast",
+        "ltcg_willowisp_integrated_blade"
+      ]
+    },
+    "image_url": "https://i.imgur.com/qea8cLm.png",
+    "y_pos": 27
+  },
+  {
+    "id": "ltcg_golem",
+    "source": "HORUS",
+    "name": "Golem",
+    "mechtype": [
+      "Defender"
+    ],
+    "license_level": 2,
+    "description": "Someone out there has an interest in the Ungrateful Revolution, and is willing to provide the means of rebellion if the people provide bodies to pilot them. Toward this end, the Kobold pattern group was unleashed within the ranks of the uprising, a volatile code package which could transform almost any mining vehicle and its equipment into a piloted combat frame of dangerous capability.<br>But it didn’t end there. As the fight rages on, a new rumour has appeared. Behemoths stalk the planet, seeking to protect those who fight in the name of the Ungratefuls. These entities have been identified as a new pattern group of frames, the Golem, and follow in the Kobold’s footsteps for having an unusual method of construction. A Golem frame is manufactured first by printing a whitewash nanite-swarm package loaded with a particular code injection, codenamed CHISEL. Then, this package is mounted to a stone surface of sufficient size, be it a cliff face, a boulder, an asteroid, or even just the solid ground. Within hours, the nanite swarm will carve a Golem from the raw material provided to it, building everything that it could need from the rubble and rock. The nanites themselves end by joining together to form the mandatory electrical and mechanical components, such as the reactor, the wiring, and the control interfaces.<br>The Golem operates as a threatening protector on the battlefield. It crashes through front lines and stays there, occupying the enemy while auxiliary forces move to close around them. However, despite their potential ubiquity, only a few Golem package licences have been issued so far. It is unknown whether it was meant to be released, or whether the code leaked, in some way.",
+    "mounts": [
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 2,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Bear Down",
+        "description": "1/round, the Golem may move 3 spaces as a free action. It must end this movement adjacent to a hostile character. Additionally, characters Engaged by the Golem are also Impaired until they cease to be Engaged by it."
+      },
+      {
+        "name": "Unstoppable",
+        "description": "Whenever the Golem rolls any number of 1s on a structure damage check, it is always only Stunned until the end of its next turn, instead of the normal effects. In addition, when the Golem is Stunned, it can still Overcharge, and perform the action granted by doing so."
+      },
+      {
+        "name": "Slow",
+        "description": "The Golem receives +1 difficulty on Agility checks and saves.",
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Golem receives +1 difficulty on Agility checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Ire of Truth",
+      "description": "With a moaning cry, the thunderous gunfire shatters across the mighty breast of the Golem. Rubble splinters from the point of impact, revealing naught but more stone beneath.<br>Its scream draws more fire. Its purpose is being fulfilled.",
+      "active_name": "Guardian Martyr",
+      "active_effect": "Until the end of the scene, characters within your Sensors who target an ally with an attack must make a Systems save. On a fail, they target you instead, if possible. If not possible, they attack the ally as normal, but at +1 difficulty.",
+      "activation": "Protocol"
+    },
+    "image_url": "https://i.imgur.com/iDrfVFR.png",
+    "y_pos": 25
+  },
+  {
+    "id": "ltcg_junger",
+    "source": "HA",
+    "name": "Jünger",
+    "mechtype": [
+      "Striker",
+      "Artillery"
+    ],
+    "license_level": 2,
+    "description": "The Armory does not have IPS-N’s reputation for approving of in-field modifications of existing license package equipment. It speaks to their roots in the belief of their own perfection; if meddling is required, then you do not believe their equipment is perfect, and you do not deserve it. Even so, it is impossible to police such a policy on any reasonable scale, and in corners on the edges of Harrison space, tinkerers do their work on anything they can get their hands on. In fact, the Armory have been known to supply field-test equipment and military surplus components to promising mercenary groups, and potentially useful operatives, in the hope, perhaps, of both meeting helpful allies, and even perhaps that they find uses for the gear not yet thought of.<br>The Jünger license package is one of these field-test-sourced collections, a ‘kitchen sink’ aggregation of in-test equipment, and one that is now being distributed among groups that helped develop it in the first place, a feedback loop echoed by the practice of feeding the Think Tank’s output back into itself to generate iterated designs. It operates as a more control-oriented application of the Armory’s patented Tachyon Loop technology. There are many applications of the FTL particles, typically offensive, as in the case of the tachyon lance, and defensive, as with the Saladin and its tachyon shield. The Jünger, wreathed in a pattern of tachyon projectors, is capable of forming airborne cycles out to a short range, aiding it in both respects by providing limited-entry directive cover, and using pre-refined trigonometric calculations generated by NOAH Prime to redirect its own weaponry for optimal firing angles. These cycles are maintained by high-volt capacitance coils, leading the Jünger to fight in the midst of crackling lightning, like a brutal storm.",
+    "mounts": [
+      "Flex",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 9,
+      "edef": 7,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Charged Cloak",
+        "description": "When the Jünger Overcharges, it gains Overshield equal to 2 + Grit."
+      },
+      {
+        "name": "Overwhelming Fire",
+        "description": "1/round, when the Jünger hits with a ranged weapon attack against a character it has already hit with a ranged weapon attack this turn, it deals +1d6 bonus damage."
+      }
+    ],
+    "core_system": {
+      "name": "Tachyon Projector",
+      "description": "By strategically tuning tachyon loop frequencies, they can remain stable when cast out to a fairly distant range. Specialized even further, a similar effect to that performed by NOAH-class NHPs allows an operative to “ricochet” their projectile weaponry around corners, giving the Jünger exceptional tactical ability in high-cover scenarios.",
+      "passive_name": "Trick Shot",
+      "passive_effect": "You can draw range and line-of-sight for any ranged weapon attack you make from anywhere within range 3 and line-of-sight. Hostile characters in a Line between you and this origin point take 1 AP Energy damage.",
+      "active_name": "Heightened Projection",
+      "active_effect": "Until the end of the scene, Trick Shot becomes range 6 instead of range 3.",
+      "activation": "Protocol"
+    },
+    "image_url": "https://i.imgur.com/mIUcNVr.png",
+    "y_pos": 8
+  },
+  {
+    "id": "ltcg_garcia",
+    "source": "HA",
+    "name": "Garcia",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "license_level": 2,
+    "description": "There are hundreds, thousands even, of designs and permutations generated by the Armory Think Tank each and every day, most, if not all of them, never seeing the light of day outside of the system’s operators. Every now and again, however, something leaks, an experimental design believed to be novel by a researcher, extracted from the tank, and then forgotten. Even in these cases, the design may never be released to the world at large. But very rarely, something slips out.<br>The Garcia is one of these ‘tank-leaks’, as the Armory has called them. Rather than being released and licensed as a full, legally purchasable package, it is available only in corners of the dark omninet, where illicit goods are bought and sold. It has garnered some attention in recent years, seeing use in sectors near the Dawnline where Horus cults are a more common occurrence, but so far, Harrison Armory have made consistent efforts to hide and hush up all traces of the license, lest it be traced back to the secret of their massive research and development behemoth.",
+    "mounts": [
+      "Main/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 11,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Heat Signature Targeting",
+        "description": "The Garcia gains +1 accuracy on attacks that target characters in the Danger Zone."
+      },
+      {
+        "name": "Harrier Frequency",
+        "description": "Whenever a hostile character within the Garcia's Sensors makes a stress check, it may take 1d6 heat as a reaction to decrease the result of the stress check by 1. If this causes an Irreversible Meltdown for the hostile character, they explode immediately instead of at the end of their next turn."
+      }
+    ],
+    "core_system": {
+      "name": "Jumpstart Booster",
+      "description": "Initially devised as part of trials to develop faster and more efficient methods of initializing mech-scale reactors, the Jumpstart Booster was an enormous failure on all counts. In every case, the reactor immediately entered an uncontrolled runaway, even in cases where it was considered the reactor was too damaged to be started by normal means. By combining the booster payload with disposable microdrones, which also contained low-fragment comp/con units capable of brief systemic control, the failed project was salvaged as many have been before it; by weaponising its catastrophic potential.",
+      "active_name": "Runaway Override",
+      "active_effect": "Choose up to 3 wrecks within Sensors. Each wreck jerks to brief life, is pushed up to 4 spaces in a direction of your choice, and then explodes in a Burst 2 area that deals 4d6 Explosive damage, vaporizing the wreck and anyone still in it. Characters caught in the explosion that succeed on an Agility save take half of this damage. Characters only make one save against this effect, even if they are in range of multiple explosions. For each explosion past the first the character is within, they take +1 difficulty on the save.",
+      "activation": "Full"
+    },
+    "image_url": "https://i.imgur.com/gXzgXVH.png",
+    "y_pos": 30
+  }
+]

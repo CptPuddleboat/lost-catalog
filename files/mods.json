@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ltcg_rate_limit_override",
+    "name": "Rate Limit Override",
+    "sp": 2,
+    "allowed_types": ["CQB", "Rifle", "Nexus"],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 3,
+    "effect": "This weapon gains a Heat 1 (Self) tag, or increases it by 1 if it already has one. Each attack with it gains +2 Reliable.",
+    "description": "A general purpose modification designed to generally improve performance of most munitions-firing weapons, often by increasing the volume of fire. The additional components require increased power draw, which might introduce problems for weaker reactors."
+  },
+  {
+    "id": "ltcg_zip_ammo",
+    "name": "Zip Ammo",
+    "sp": 2,
+    "allowed_types": ["Cannon", "Launcher", "Nexus", "Rifle"],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Ulysses",
+    "license_level": 2,
+    "effect": "The weapon gains AP. It cannot be fired at any target within Range 3.",
+    "description": "Weaponized blink tech is a terrifying thing, a fact clearly evidenced by the Voladores’ reticence to trade their knowledge on the subject to the Armory. IPS-N is possibly no better. By attaching this module to a weapon, and pairing it with appropriate ordnance, projectile airtime is minimized with a short-range blink-hop, raising penetration and accuracy, though introducing a minimum range."
+  }
+]

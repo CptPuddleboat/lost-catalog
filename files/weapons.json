@@ -1,0 +1,737 @@
+[
+    {
+      "id": "ltcg_heavy_shotgun",
+      "name": "Heavy Shotgun",
+      "mount": "Heavy",
+      "type": "CQB",
+      "damage": [
+        {
+          "type": "Kinetic",
+          "val": "1d6+2"
+        }
+      ],
+      "range": [
+        {
+          "type": "Range",
+          "val": 5
+        },
+        {
+          "type": "Threat",
+          "val": 3
+        }
+      ],
+      "tags": [
+        {
+          "id": "tg_knockback",
+          "val": "2"
+        }
+      ],
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0,
+      "description": "The Type-I (T-1) heavy shotgun is very similar to GMS’s typical shotgun schematic, but reinforced for larger shell gauge and shot size. It maintains a short barrel for improved target acquisition in high-stress scenarios, and the additional power lended by its increased scale greatly improves effect-on-target.",
+      "license_id": ""
+    },
+    {
+        "id": "ltcg_piston_hammer_staff",
+        "name": "“Piston” Hammer Staff",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d6+1"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 1
+            },
+            {
+                "id": "tg_inaccurate"
+            }
+        ],
+        "source": "IPS-N",
+        "license": "Davy",
+        "license_level": 1,
+        "effect": "Attacks made at this weapon’s maximum threat deal 2 additional damage and 1 additional Knockback.",
+        "description": "A simple weapon, from a simple source. The hammer staff is almost entirely repurposed from IPS-N’s mining operations division, originally designed as the head of a piledriver-like device, built for transferring immense amounts of force over a small surface area. As a mech weapon, the concept is very much the same; a large, hyperdense head, attached to a long length of titanium, designed to be jabbed at a target in similar fashion to a spear, except with pure bludgeoning force in place of piercing."
+    },
+    {
+        "id": "ltcg_chain_flail",
+        "name": "Chain Flail",
+        "mount": "Main",
+        "type": "Melee",
+        "source": "IPS-N",
+        "license": "Davy",
+        "license_level": 2,
+        "profiles": [
+            {
+                "name": "Standard",
+                "damage": [
+                    {
+                        "type": "Kinetic",
+                        "val": "1d6"
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Threat",
+                        "val": 2
+                    }
+                ],
+                "effect": "You may spin up this weapon as a quick action. While spun up, any attack made with it uses the Spun Up profile.",
+                "actions": [
+                    {
+                        "name": "Spin Up Chain Flail",
+                        "activation": "Quick",
+                        "detail": "Whirl the chain around at high speed, setting it aflame, and allowing use of its \"Spun-Up\" profile."
+                    }
+                ]
+            },
+            {
+                "name": "Spun-Up",
+                "damage": [
+                    {
+                        "type": "Kinetic",
+                        "val": "1d6+3"
+                    },
+                    {
+                        "type": "Burn",
+                        "val": 1
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Threat",
+                        "val": 2
+                    }
+                ],
+                "on_attack": "If the attack misses, this weapon ceases to be spun up.",
+                "tags": [
+                    {
+                        "id": "tg_inaccurate"
+                    }
+                ]
+            }
+        ],
+        "description": "It was a dark and stormy night,<br>And the captain said to Antonio,<br>Tell us a tale, Antonio,<br>And this is the tale Antonio told,<br>It was a dark and stormy night,<br>And the captain said to Antonio,<br>Tell us a tale, Antonio,<br>And this is the tale Antonio told,<br>It was a dark and stormy night…<br>- Ancient Cradle poem, continues infinitely."
+    },
+    {
+        "id": "ltcg_rsd_emitter",
+        "name": "RSD Emitter",
+        "mount": "Main",
+        "type": "Cannon",
+        "source": "IPS-N",
+        "license": "Ulysses",
+        "license_level": 2,
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d6"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Line",
+                "val": 10
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_reliable",
+                "val": 2
+            },
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "description": "The RSD, or “Remote Saturation Device”, is an attachment designed to be mounted to a standard issue IPS-N Hailstorm disposable machine gun. Using nearfield blink displacement, the bullets fired from the muzzle are instead expelled from a different point in nearby space, oriented by a deployed anchor. Initial testing suggests the device will prove invaluable in the theaters that IPS-N typically operates, namely boarding actions and breach-and-clear."
+    },
+    {
+        "id": "ltcg_tether_harpoon",
+        "name": "Tether Harpoon",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "1d6"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_thrown",
+                "val": 5
+            },
+            {
+                "id": "tg_limited",
+                "val": 3
+            }
+        ],
+        "source": "IPS-N",
+        "license": "Ulysses",
+        "license_level": 3,
+        "effect": "When this weapon has been thrown, and rests on the ground, you may expend a charge as a free action to teleport to its location. You may attack with this weapon without expending or requiring charges, and this weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
+        "description": "IPS-N has a lot to learn and break down from the snatches of data they’ve managed to crack open from the stolen Armory code, but their engineers are nothing if not masters at jury-rigging. This weapon appears to be a scrambled implementation of the Blink Anchor, though this crude replica requires a tether to be linked from frame to shaft to facilitate the fold dialocation telemetry transfer."
+    },
+    {
+        "id": "ltcg_dancing_blade",
+        "name": "Dancing Blade",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d3+1"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 5
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_smart"
+            },
+            {
+                "id": "tg_seeking"
+            }
+        ],
+        "sp": 1,
+        "source": "SSC",
+        "license": "Herald",
+        "license_level": 1,
+        "description": "A product of experimentation with what the Exotic Materials Group is calling “zero-point energy”, this short blade is suspended in the air at the end of a whip-like tether. Zero-point energy allows the blade to be maneuvered without respect for physical laws such as momentum, allowing the blade to near-instantly zip from one point to another at a long reach. The technology is limited to small payloads for the time being, reducing the potential damage of the application."
+    },
+    {
+        "id": "ltcg_mag_buckler",
+        "name": "Mag Buckler",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d3+2"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_thrown",
+                "val": 5
+            },
+            {
+                "id": "tg_seeking"
+            }
+        ],
+        "sp": 1,
+        "source": "SSC",
+        "license": "Herald",
+        "license_level": 2,
+        "effect": "When this weapon is retrieved after being thrown, you gain Overshield equal to your Grit. Allied characters can retrieve this weapon for you; they must use a free action while adjacent to it and within range 5 of you. If they do so, they gain the Overshield instead, and you retrieve the weapon.",
+        "description": "An implementation of the resonance energy shielding used to reinforce many of SSC's lighter frames, paired with an offensive magnetic projectile. This capability allows it some amount of automatic in-air correction when thrown, both toward an intended target, and even when returning to its user."
+    },
+    {
+        "id": "ltcg_judgment_nexus",
+        "name": "Judgment Nexus",
+        "mount": "Main",
+        "type": "Nexus",
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "1d3+3"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "source": "SSC",
+        "license": "Luna",
+        "license_level": 1,
+        "effect": "This weapon does not attack allied characters caught in its area of effect; instead, it surrounds them with a swarm of defensive nanites, granting them Overshield equal to 1 + half your Grit. If it successfully hits a hostile character in the same area, it grants Overshield equal to 2 + your full Grit instead.",
+        "description": "By supplying identification frequencies to allies, and implementing capacitive deflection and high-voltage system targeting within a single nexus drone, the Judgment Nexus is capably of releasing a high-ordnance payload into a dense fray of combat, and be certain of causing significant interference to hostiles, while applying defensive measures to allies caught in the area."
+    },
+    {
+        "id": "ltcg_mercy_needle",
+        "name": "Mercy Needle",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d6"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "source": "SSC",
+        "license": "Luna",
+        "license_level": 2,
+        "effect": "Allied characters can choose to let this weapon hit them. If they do, it deals maximum damage, and if this causes Structure damage, they do not carry over any damage, and do not make a Structure check.",
+        "description": "With complex mechanical machinery, it can sometimes be more beneficial to the system as a whole to excise a problem, rather than to allow the issue to cause further problems elsewhere. The Mercy Needle is a high-frequency vibroblade that hums as its cuts through plating. It’s awkward to wield, but against still targets, it can remove broken components with minimal effect to connected systems."
+    },
+    {
+        "id": "ltcg_mythblade",
+        "name": "Mythblade",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "2d6"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_reliable",
+                "val": 2
+            }
+        ],
+        "sp": 1,
+        "source": "HORUS",
+        "license": "Will-O'-Wisp",
+        "license_level": 1,
+        "effect": "Biological characters and objects are Immune to attacks from this weapon.",
+        "on_hit": "The target makes a Systems save. If the hit was a critical hit, they have +1 difficulty on the save. On a success, the attack is treated as a miss instead.",
+        "description": "The Mythblade is a weapon that doesn’t exist, though not in the same ways as some Pegasus pattern group equipment doesn’t technically exist. Similar to the Will-O’-Wisp’s Mindshadow system, it is a sword which manifests only within the processors of its foes, a memetic system intrusion that, on contact with the falsified construct, convinces their systems that they’re taking severe damage to the point that they’ll voluntarily shut down. However, its limited projection renders it useless against biological foes, failing to cause sufficient effect in even the simplest of minds."
+    },
+    {
+        "id": "ltcg_shamshank_bolt",
+        "name": "Shamshank Bolt",
+        "mount": "Auxiliary",
+        "type": "Rifle",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d3"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_ordnance"
+            },
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "source": "HORUS",
+        "license": "Will-O'-Wisp",
+        "license_level": 2,
+        "effect": "Line of sight and range with this weapon can be drawn from anywhere within 2 spaces of you, rather than just from your space.",
+        "description": "// > YOU ARE NOT SAFE.<br>// ><br>// > WALLS ARE NO BARRIER."
+    },
+    {
+        "id": "ltcg_dustmaker_hammer",
+        "name": "Dustmaker Hammer",
+        "mount": "Heavy",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Explosive",
+                "val": "1d6+7"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_inaccurate"
+            },
+            {
+                "id": "tg_knockback",
+                "val": 3
+            }
+        ],
+        "source": "HORUS",
+        "license": "Golem",
+        "license_level": 3,
+        "effect": "This weapon deals 30 AP Explosive damage to objects, cover, terrain, and the environment on a hit, and 10 AP Explosive damage on a miss. No wreck is left behind if it destroys a mech. If it destroys any of these, choose a target within range 5 and line of sight of the destroyed entity. The target must succeed on an Agility save, or take 2d6 Kinetic damage, half on a success. If this destroys an entity, it does not trigger the same effect.",
+        "description": "Another piece of repurposed mining equipment, this time based on the explosive sledgehammers used for extreme demolition. By shortening the handle and fine-tuning the repeatable explosive devices, the hammer can be made into quite a precise weapon capable of dealing ruinous damage. Its size, however, makes it an awkward object to wield in even the largest hands."
+    },
+    {
+        "id": "ltcg_brontes_arc_caster",
+        "name": "Brontes Arc Caster",
+        "mount": "Main",
+        "type": "Launcher",
+        "profiles": [
+            {
+                "name": "Standard",
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": "2d3"
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 10
+                    }
+                ],
+                "effect": "You may charge this weapon as a quick action. While charged, any attack made with it uses the Charged profile.",
+                "tags": [
+                    {
+                        "id": "tg_ap"
+                    },
+                    {
+                        "id": "tg_heat_self",
+                        "val": 1
+                    }
+                ],
+                "actions": [
+                    {
+                        "name": "Charge Arc Caster",
+                        "activation": "Quick",
+                        "detail": "Supply greater power to the launcher, making the next attack use its \"Charged\" profile."
+                    }
+                ]
+            },
+            {
+                "name": "Charged",
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": "2d3+5"
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 15
+                    }
+                ],
+                "on_attack": "This weapon becomes uncharged, whether the attack hit or missed.",
+                "tags": [
+                    {
+                        "id": "tg_overkill"
+                    },
+                    {
+                        "id": "tg_ap"
+                    },
+                    {
+                        "id": "tg_heat_self",
+                        "val": 2
+                    }
+                ]
+            }
+        ],
+        "source": "HA",
+        "license": "Jünger",
+        "license_level": 2,
+        "description": "A reworked implementation of the plasma containment and projection procedures developed as part of the Tokugawa-pattern research, the arc caster alters the intended effect-on-target from the original design. In place of a short-range wide-pattern blast of superheated plasma, the Brontes instead utilizes a supercapacitive gas mixture to store and maintain a charge, which is then launched with high-precision electro-magnetic rails. High-voltage operation is possible, especially when supplied by Harrison-brand mech reactors."
+    },
+    {
+        "id": "ltcg_rotary_autopistol",
+        "name": "Rotary Autopistol",
+        "mount": "Auxiliary",
+        "type": "CQB",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d3+2"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_heat_self",
+                "val": 1
+            }
+        ],
+        "effect": "This weapon is automatically reloaded whenever you Overcharge.",
+        "source": "HA",
+        "license": "Jünger",
+        "license_level": 2,
+        "description": "A unique experimentation into alternate projectile-launching systems, this weapon makes use of a high-speed internal centrifugal drum to launch hyperdense pellets. Each pellet shot reduces the overall speed available, until the motor must be recharged manually, but by tying the motion direction to the internal reactor coil through sympathetic nano-linkages, a well-timed overspool of the reactor can return the weapon to full-power operation."
+    },
+    {
+        "id": "ltcg_rigel_patter_laser_lance",
+        "name": "Rigel-Pattern Laser Lance",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "3"
+            },
+            {
+                "type": "Heat",
+                "val": "2"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_heat_self",
+                "val": 1
+            }
+        ],
+        "on_hit": "If this attack causes the target to overheat, the target becomes Shredded until the end of its next turn.",
+        "source": "HA",
+        "license": "Garcia",
+        "license_level": 1,
+        "description": "The Rigel-Pattern projects concentric rings of short-throw high-energy beams around a superheated spearpoint, softening armored plating ahead of a targeted thrust. Particularly accurate attacks can puncture reactor shielding, and allow the lasers to interfere with and overexcite the process of coldcore fusion."
+    },
+    {
+        "id": "ltcg_ripper_beam",
+        "name": "Ripper Beam",
+        "mount": "Main",
+        "type": "Rifle",
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "3"
+            },
+            {
+                "type": "Heat",
+                "val": "1"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_heat_self",
+                "val": 1
+            }
+        ],
+        "on_hit": "If the target is in the Danger Zone, you deal +1d6 bonus damage.",
+        "on_crit": "If the target is in the Danger Zone, this attack gains AP.",
+        "source": "HA",
+        "license": "Garcia",
+        "license_level": 2,
+        "description": "The Ripper Beam is a shoulder-mounted auto-targeted weapon in its standard configuration. It is a high-intensity energy weapon, and when the operator selects a target, it automatically locks on to weak points and adjusts its aim autonomously. By targeting heat leakages from hostile reactors, it can easily melt though armored plating."
+    },
+    {
+        "id": "ltcg_hexcalibur",
+        "name": "Hexcalibur",
+        "mount": "Heavy",
+        "source": "EXOTIC",
+        "type": "Melee",
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "3d6+3"
+            }
+        ],
+        "effect": "This weapon cannot be used until it is unsheathed as a quick action. While unsheathed, if you end a turn without causing structure damage that turn, you take 4 heat, and must roll a cascade check. This weapon can be sheathed as a protocol.",
+        "description": "Wreathed in roiling purple plasma, defying normal physics, Hexcalibur is the result of torturous experiments with the paracausal sentiences known as NHPs. Whatever creature is trapped within this blade now, it is far, far beyond reason. It is held forever at an unstable equilibrium between this world, and whatever strange space its kind normally occupy, and at this bridge, strange energy can be harvested for destructive purpose. The sheath of the weapon contains memetic frequency dampeners which act to 'pause' the endless cascade process, but when removed in order to spark the destructive plasma, the entity careens endlessly toward that insane unfurling. Somewhat unsettlingly, the creature appears to be calmed by the presence of destruction.",
+        "tags": [
+            {
+                "id": "tg_ai"
+            },
+            {
+                "id": "tg_overkill"
+            },
+            {
+                "id": "tg_exotic"
+            }
+        ],
+        "sp": 2,
+        "license_id": ""
+    },
+    {
+        "id": "ltcg_davy_integrated_superspec_fuel_canister",
+        "name": "Superspec Fuel Canister",
+        "mount": "Heavy",
+        "type": "Melee",
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d6+3"
+            }
+        ],
+        "effect": "This weapon does not expend charges on attack, and can still be used without charges. The Kinetic damage it deals is increased by an amount equal to its remaining charges.<br>1/round immediately after you Ram or Skirmish with this weapon, you may expend a charge to Boost as a free action. This Boost does not provoke reactions.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 3
+            }
+        ],
+        "license_id": ""
+    },
+    {
+        "id": "ltcg_willowisp_integrated_beam",
+        "name": "Construct Beam",
+        "mount": "Main",
+        "type": "Rifle",
+        "range": [
+            {
+                "type": "Range",
+                "val": 15
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "1d3+3"
+            }
+        ],
+        "effect": "Attacks with this weapon add your Tech Attack instead of your Grit. Objects are Immune to attacks from this weapon.",
+        "tags": [
+            {
+                "id": "tg_smart"
+            },
+            {
+                "id": "tg_reliable",
+                "val": 2
+            }
+        ],
+        "license_id": ""
+    },
+    {
+        "id": "ltcg_willowisp_integrated_blast",
+        "name": "Construct Blast",
+        "mount": "Auxiliary",
+        "type": "CQB",
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "1d3+1"
+            }
+        ],
+        "effect": "Attacks with this weapon add your Tech Attack instead of your Grit. You make two attacks with this weapon at a time. Objects are Immune to attacks from this weapon.",
+        "tags": [
+            {
+                "id": "tg_smart"
+            },
+            {
+                "id": "tg_seeking"
+            }
+        ],
+        "license_id": ""
+    },
+    {
+        "id": "ltcg_willowisp_integrated_blade",
+        "name": "Construct Blade",
+        "mount": "Main",
+        "type": "Melee",
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "2d3+1"
+            }
+        ],
+        "effect": "Attacks with this weapon add your Tech Attack instead of your Grit. Objects are Immune to attacks from this weapon.",
+        "tags": [
+            {
+                "id": "tg_smart"
+            },
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "license_id": ""
+    }
+]

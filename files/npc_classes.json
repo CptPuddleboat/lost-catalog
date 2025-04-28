@@ -1,0 +1,208 @@
+[
+    {
+        "id": "ltcg_npc_factory",
+        "name": "FACTORY",
+        "role": "support",
+        "info": {
+            "flavor": "Factory-designated platforms saw their first use on planets that had seen a variety of failed colonization efforts. They began purely as collectors of waste and refuse, but as range increased and home became more and more distant, it became necessary for the platforms to contain their own fabrication facilities. On desert planets, lost and wandering, scrap trawlers still march across the plains to this very day, collecting the remnants of failed expeditions, much like their own.",
+            "tactics": "Factories are slow and resilient characters that can disrupt foes with forced movement, and build autonomous drones from the wrecks of its allies. They aim to not draw fire, which is hard to do due to their size, but if left to its own devices, it can build significant reinforcements. They’ll want to stay near enough to their forces to use Deploy Warrior to create new drones, but not so close that it draws too much fire. Use Salvage Harpoon to disrupt foes when the Factory has no wrecks to use, and otherwise to pull wrecks close enough to convert. Use the various template options to vary the Factory’s warriors to combat a variety of problems, use Hyperproduction to quickly fill out the field with new foes."
+        },
+        "stats": {
+            "armor": [
+                2,
+                2,
+                3
+            ],
+            "hp": [
+                16,
+                18,
+                22
+            ],
+            "evade": [
+                6,
+                6,
+                6
+            ],
+            "edef": [
+                8,
+                8,
+                8
+            ],
+            "heatcap": [
+                8,
+                8,
+                8
+            ],
+            "speed": [
+                2,
+                2,
+                2
+            ],
+            "sensor": [
+                10,
+                10,
+                10
+            ],
+            "save": [
+                10,
+                10,
+                10
+            ],
+            "hull": [
+                2,
+                4,
+                6
+            ],
+            "agility": [
+                -2,
+                -2,
+                -2
+            ],
+            "systems": [
+                0,
+                0,
+                0
+            ],
+            "engineering": [
+                1,
+                2,
+                3
+            ],
+            "size": [
+                [
+                    2,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ]
+            ],
+            "activations": [
+                1,
+                1,
+                1
+            ]
+        },
+        "base_features": [
+            "ltcg_npcf_heavy_frame_factory",
+            "ltcg_npcf_guardian_factory",
+            "ltcg_npcf_deploy_warrior_factory",
+            "ltcg_npcf_salvage_harpoon_factory"
+        ],
+        "optional_features": [
+            "ltcg_npcf_demolition_cannon_factory",
+            "ltcg_npcf_brawler_template_factory",
+            "ltcg_npcf_harrier_template_factory",
+            "ltcg_npcf_defender_template_factory",
+            "ltcg_npcf_hyperproduction_factory",
+            "ltcg_npcf_autonomy_chip_factory"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ltcg_npc_ghost",
+        "name": "GHOST",
+        "role": "striker",
+        "info": {
+            "flavor": "There are many things we don’t understand, out there in the black beyond the black. The archetype of a Ghost represents many of those unknowns, be it a rogue AI, a rampant and dangerous memetic program, or a monster of madness from beyond the blink.",
+            "tactics": "Ghosts are relatively fragile characters to deal with, but can become a consistent problem if not destroyed for good quickly. Use Phantasm early on to introduce the Ghost’s presence, then when characters start being destroyed, have the Ghost appear using Shell and target weak, lonely characters. Optional systems like Anathema and All Alone can increase the Ghost’s survivability and damage respectively, but Ghosts are almost always easy to kill for good. Smart players will Scan a Ghost when it’s not Intangible to see what its Bane is."
+        },
+        "stats": {
+            "armor": [
+                0,
+                0,
+                0
+            ],
+            "hp": [
+                10,
+                12,
+                16
+            ],
+            "evade": [
+                10,
+                12,
+                14
+            ],
+            "edef": [
+                8,
+                8,
+                8
+            ],
+            "heatcap": [
+                5,
+                6,
+                8
+            ],
+            "speed": [
+                5,
+                5,
+                5
+            ],
+            "sensor": [
+                10,
+                10,
+                10
+            ],
+            "save": [
+                12,
+                13,
+                14
+            ],
+            "hull": [
+                1,
+                2,
+                3
+            ],
+            "agility": [
+                1,
+                2,
+                3
+            ],
+            "systems": [
+                -1,
+                -1,
+                -1
+            ],
+            "engineering": [
+                -2,
+                -1,
+                0
+            ],
+            "size": [
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ]
+            ],
+            "activations": [
+                1,
+                1,
+                1
+            ]
+        },
+        "base_features": [
+            "ltcg_npcf_plasmic_claws_ghost",
+            "ltcg_npcf_shell_ghost",
+            "ltcg_npcf_bane_ghost",
+            "ltcg_npcf_phantasm_ghost"
+        ],
+        "optional_features": [
+            "ltcg_npcf_lancing_nightmare_ghost",
+            "ltcg_npcf_anathema_ghost",
+            "ltcg_npcf_these_chains_are_forged_ghost",
+            "ltcg_npcf_all_alone_ghost",
+            "ltcg_npcf_whisper_ghost"
+        ],
+        "power": 100
+    }
+]

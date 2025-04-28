@@ -1,0 +1,365 @@
+[
+    {
+        "id": "ltcg_npcf_salvage_harpoon_factory",
+        "name": "SALVAGE HARPOON",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "This weapon automatically hits and deals no damage to wrecks.",
+        "tags": [],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [
+            1,
+            2,
+            3
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [
+                    3,
+                    5,
+                    7
+                ]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_heavy_frame_factory",
+        "name": "HEAVY FRAME",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Factory can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_guardian_factory",
+        "name": "GUARDIAN",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Allied characters can use the Factory for hard cover.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_deploy_warrior_factory",
+        "name": "DEPLOY WARRIOR",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "The Factory has a pre-built pattern that it can generate. Destroy an adjacent wreck, and replace it with a Warrior Drone.<br><br>Warrior Drone (Size 1/2, HP 5/8/10, Armor 1, Evasion 10, E-Defense 10, Tags: Drone)<br>At the end of the Factory’s turn, all warriors move 5 spaces toward the nearest hostile character. If they end this movement adjacent to a hostile character, the hostile character takes 4/5/6 AP Kinetic damage. If the factory is ever destroyed, its warriors cease to function.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_demolition_cannon_factory",
+        "name": "DEMOLITION CANNON",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "This weapon deals 8/11/14 explosive damage to characters below half HP, instead of its normal damage. If it causes Structure damage, a size 1/2 wreck appears in a free adjacent space to the target.",
+        "tags": [],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [
+            0,
+            1,
+            2
+        ],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [
+                    6,
+                    8,
+                    10
+                ]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 15
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_brawler_template_factory",
+        "name": "BRAWLER TEMPLATE",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Warrior drones can follow the movement of an adjacent hostile character without triggering reactions, as if grappling it.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_harrier_template_factory",
+        "name": "HARRIER TEMPLATE",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Warrior drones can fly, and move 2 additional spaces.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_defender_template_factory",
+        "name": "DEFENDER TEMPLATE",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "If an ally other than the Factory is closer than a hostile character, warrior drones will move toward the ally instead. If they end this movement adjacent to an ally, the ally gains 3/4/5 overshield.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_hyperproduction_factory",
+        "name": "HYPERPRODUCTION",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "1/round, the Factory can take 1d6 heat and use its Deploy Warrior system as a free action.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_autonomy_chip_factory",
+        "name": "AUTONOMY CHIP",
+        "origin": {
+            "type": "Class",
+            "name": "FACTORY",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Warrior drones created by the Factory continue to function if the Factory is destroyed, acting at the end of the round instead.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_plasmic_claws_ghost",
+        "name": "PLASMIC CLAWS",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "On critical hit: Target is Impaired until the end of its next turn.<br>At T2, this weapon can make two attacks at a time, targeting either the same character or two different ones. At T3, it can make three attacks at a time.",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [
+            1,
+            3,
+            5
+        ],
+        "accuracy": [
+          1,
+          1,
+          1
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [
+                    5
+                ]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_shell_ghost",
+        "name": "SHELL",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Ghost is Intangible, and can never have more than 1 Structure or Stress. As a quick action, it can inhabit an adjacent wreck and take on its appearance, destroying it, and ceasing to be Intangible. Whenever the Ghost would take Structure or Stress damage while not Intangible, it is restored back to full HP and 0 heat, and becomes Intangible again. If it takes Structure or Stress damage while Intangible, it is instantly destroyed.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_bane_ghost",
+        "name": "BANE",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Choose one of the following methods to truly kill the Ghost. The chosen Bane is revealed when the Ghost is scanned.<ul><li><b>Bane of Faith:</b> A character who succeeds at a Systems check as a quick action ignores the Ghost’s Intangibility until the end of their next turn.</li><li><b>Bane of Ruin:</b> A character who is on half or less HP or is in the danger zone ignores the Ghost’s Intangibility.</li><li><b>Bane of Hunts:</b> A character that destroys the Ghost when it is not Intangible ignores the Ghost’s Intangibility until the end of the scene.</li></ul>",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_phantasm_ghost",
+        "name": "PHANTASM",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Ghost teleports 6 spaces, and then characters adjacent to the Ghost must succeed on a Systems save or be unable to draw line of sight to anywhere but adjacent spaces until the end of their next turn. If the Ghost is Intangible, it can still affect non Intangible characters with this trait.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_lancing_nightmare_ghost",
+        "name": "LANCING NIGHTMARE",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "On Hit: Target’s pilot takes 1 AP energy damage.",
+        "tags": [],
+        "weapon_type": "???",
+        "attack_bonus": [
+            1,
+            2,
+            3
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [
+                    4,
+                    6,
+                    8
+                ]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_horrid_possession_ghost",
+        "name": "HORRID POSSESSION",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Ghost may inhabit a wreck as a quick action instead of a full action. It takes 1d6 Energy damage when it does so.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_these_chains_are_forged_ghost",
+        "name": "THESE CHAINS ARE FORGED",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "While the Ghost is Intangible, an adjacent non-intangible character must make a Systems save or be made Intangible. If the Ghost ceases to be Intangible, is destroyed, or the scene ends, the target ceases to be Intangible.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            }
+        ]
+    },
+    {
+        "id": "ltcg_npcf_all_alone_ghost",
+        "name": "ALL ALONE",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Ghost’s weapon attacks deal +5 bonus damage against characters that cannot draw line of sight to an ally within range 5.",
+        "tags": []
+    },
+    {
+        "id": "ltcg_npcf_whisper_ghost",
+        "name": "WHISPER",
+        "origin": {
+            "type": "Class",
+            "name": "GHOST",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "The Ghost is permanently Invisible.",
+        "tags": []
+    }
+]

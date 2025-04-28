@@ -1,0 +1,64 @@
+[
+  {
+    "id": "ltcg_chthonian_frame",
+    "name": "Chthonian Frame",
+    "source": "IPS-N",
+    "effect": "You gain +1 on all saves. When you pass a save, you have Immunity to all damage and effects that would happen on a pass.",
+    "description": "Chthonian frames are designed around pure and brutal indomitability. Nothing will ever keep them down."
+  },
+  {
+    "id": "ltcg_modernisations",
+    "name": "Modernisations",
+    "source": "IPS-N",
+    "effect": "If your frame's base tech attack is negative, it becomes 0. You gain +1 on all tech attacks.",
+    "description": "With so much of its roster rooted in tradition, IPS-N have to make special effort to drag their line into the 6th millenium. This general-purpose package includes a universal e-warfare modem which, while bulky and awkward in classic Northstar style, is more than enough to bring any sub-par frame into line with modern offensive systems doctrine."
+  },
+  {
+    "id": "ltcg_smoothpass_lattice",
+    "name": "Smoothpass Lattice",
+    "source": "SSC",
+    "effect": "1/round, a pilot can Mount or Dismount your mech as a free action. Pilots cannot Mount your mech without your express permission. Additionally, 1/scene, Dismounting your mech grants the dismounter 5 + Grit Overshield.",
+    "description": "The smoothpass lattice is an evolution of standard hatch or doorway mech frame entrances, which are obvious weak points in designs both structurally and aesthetically. SSC will spend significant and equal energies to resolve any issue that impacts either."
+  },
+  {
+    "id": "ltcg_luxury_selection",
+    "name": "Luxury Selection",
+    "source": "SSC",
+    "effect": "Until the end of the first round in each scene, you gain +1 accuracy on attacks, checks, and saves, and on your turn, you may Boost once as a free action.",
+    "description": "SSC ensures that all their frames are comfortable, but only their truly special clients get the full, made-to-order attention. Anyone sat in a full-featured SSC cockpit, the quiet hum of the reactor buzzing through the hydrogel seat, feels as if they could take on the world."
+  },
+  {
+    "id": "ltcg_third_eye",
+    "name": "Third Eye",
+    "source": "HORUS",
+    "effect": "Increase your Sensors by 3.",
+    "description": "Open your eyes. Then, open your eyes again.",
+    "bonuses": [
+      {
+        "id": "sensor_range",
+        "val": 3
+      }
+    ]
+  },
+  {
+    "id": "ltcg_superposition",
+    "name": "Superposition",
+    "source": "HORUS",
+    "effect": "1/scene, at the end of your turn, you may teleport back to where you started the turn.",
+    "description": "In its simplest form, paracausality is the inverse of our typical understanding of the nature of our universe. Where there is first a cause, there must then be an effect. However, we know now that, under certain conditions, effects can be produced for which, against all reason, no direct cause may be found, at least, not upon our mundane plane of reality. That, in essence, is paracausality. - Extract from “Outside The Firelight”, by Dr. Glenn Morrow"
+  },
+  {
+    "id": "ltcg_redline_engage",
+    "name": "Redline Engage",
+    "source": "HA",
+    "effect": "1/turn, while in the Danger Zone, you can take 2 heat to give yourself +1 accuracy on an attack, check, or save.",
+    "description": "The Armory smiles on pilots who know how best to use their machines; who have the wit, guile, and daring to impose their will upon a dark and senseless universe, and manifest their needs and wants."
+  },
+  {
+    "id": "ltcg_vitruvian_form",
+    "name": "Vitruvian Form",
+    "source": "HA",
+    "effect": "When you are Slowed, you may still Boost. Additionally, when you Overcharge to Ram or Grapple, you gain +1 accuracy on the attack.",
+    "description": "While Harrison has distanced itself from its origins in SecComm, its roots in anthrochauvinism continues even today, being the only manufacturer to offer only humanoid-pattern frames in its standard package lineup. In the opinion of the Armory; Why change what is already perfect?"
+  }
+]

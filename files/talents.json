@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ltcg_script_kiddie",
+        "name": "Script Kiddie",
+        "icon": "SCRIPT KIDDIE",
+        "terse": "gain powerful Invade options that can be used limited times",
+        "description": "It's in the furthest reaches of space that pilots must be most resourceful. At the edge of settled void, licensed software can be hard to find. That doesn't stop Catch Craven, of the Calliope system. He spends hours poring over forums, diving through signatures, ekeing out scraps of long forgotten code, collecting the most powerful system intrustion packets which ever were let loose in battle. All to get an edge over those more combat-minded than he. And yet, when those aren't enough, he throws together the meanest, roughest code that you could ever inflict on computer kind. He calls it 'The Cocktail'.",
+        "ranks": [
+            {
+                "name": "Boilerplate",
+                "description": "You develop a volatile code injection suite of your very own design, unstable, but nasty. Gain access to the Script Kiddie Suite I.",
+                "integrated": [
+                    "ltcg_script_kiddie_suite_1"
+                ],
+                "exclusive": true
+            },
+            {
+                "name": "Additional Libraries",
+                "description": "You improve your custom hack option, gaining an additional charge, and tacking on an effect which applies each time you use it. Gain access to the Script Kiddie Suite II.",
+                "integrated": [
+                    "ltcg_script_kiddie_suite_2"
+                ],
+                "exclusive": true
+            },
+            {
+                "name": "FINALFINAL-13",
+                "description": "You've spent hours tweaking and perfecting the efficiency of your hacking suite, choosing an additional effect to apply. Gain access to the Script Kiddie Suite III.",
+                "integrated": [
+                    "ltcg_script_kiddie_suite_3"
+                ],
+                "exclusive": true
+            }
+        ],
+        "icon_url": "https://svgshare.com/i/t4b.svg"
+    },
+    {
+        "id": "ltcg_marshal",
+        "name": "Marshal",
+        "icon": "MARSHAL",
+        "terse": "Command tactical maneuvers on the field of battle",
+        "description": "Being an assassin-turned-mercenary, and not a particularly clean one, the man known only as Nanoh cannot be called the height of moral decency, of heroism and virtue. But on the field of battle, his localcomms buzzing across the airwaves, shadows of a forgotten history pass across his mind. He can never remember those feelings in calm moments, not since the crash; but when bullets fly, his orders roll, and images of marching legions, nick-of-time rescues, and desperate last stands sing across his conscious thoughts. Sometimes, at night, he dreams of the wings of birds.",
+        "ranks": [
+            {
+                "name": "Move! Move! Move!",
+                "description": "1/round, when you hit a character with a ranged or melee attack, choose an allied character within range 3 of them. As a reaction, that character may move 2 spaces directly toward or away from the target of your attack. This movement does not provoke reactions from your target."
+            },
+            {
+                "name": "Take A Stand!",
+                "description": "Allied characters adjacent to you can remove Prone as a protocol, instead of using their movement."
+            },
+            {
+                "name": "Onward!",
+                "description": "1/round, when you Boost, choose an adjacent allied character. As a reaction, they may also Boost, following your movement until they run out of movement."
+            }
+        ]
+    },
+    {
+        "id": "ltcg_trooper",
+        "name": "Trooper",
+        "icon": "TROOPER",
+        "terse": "Gain more survivability while on foot",
+        "description": "He's a man of action, is Cyrus Gaspar. A veteran of two different Armory wars as an infantryman, and then a wanderer of the galaxy for years, he always sought adventure to stave off staleness and banality. Once, he found himself a guest of the Sparri, engaged in one of their mighty hunts, and lost an arm for his troubles. Even now, he roams the void, always keen for the next excitement. He leaves the piloting to his friend, a strange and esoteric NHP by the name of Balthazar; Gaspar has an axe to grind.<br><br>All effects of this talent ignore the restriction that talents do not apply while not in a mech.",
+        "ranks": [
+            {
+                "name": "Hero",
+                "description": "Your pilot gains 4 HP, 2 Evasion, and 1 Speed. In addition, improve the results of your Down and Out rolls by 1, up to a maximum of 6.",
+                "bonuses": [
+                    {
+                        "id": "pilot_hp",
+                        "val": 4
+                    },
+                    {
+                        "id": "pilot_evasion",
+                        "val": 2
+                    },
+                    {
+                        "id": "pilot_speed",
+                        "val": 1
+                    }
+                ]
+            },
+            {
+                "name": "Champion",
+                "description": "Your pilot weapons all deal +1 bonus damage. This amount increases to +3 bonus damage if you are currently Jockeying your target. In addition, you gain +1 accuracy on Jockey checks."
+            },
+            {
+                "name": "Legend",
+                "description": "1/scene, your pilot may take a quick action as a free action. You regain the ability to do this in the same scene whenever you successfully Jockey a character."
+            }
+        ]
+    }
+]

@@ -1,0 +1,1013 @@
+[
+  {
+    "id": "ltcg_mortar_drone",
+    "name": "Mortar Drone",
+    "type": "Drone",
+    "sp": 2,
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "deployables": [
+      {
+        "name": "Mortar Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "This drone can be deployed to any adjacent space as a Quick action. While deployed, you gain the Forward Observer reaction.",
+        "actions": [
+          {
+            "name": "Forward Observer",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "You or an allied character apply Lock On to a hostile character within Range 15 of the mortar drone.",
+            "detail": "You consume the Lock On, and the Mortar Drone launches a shell at the target. Place a Blast 1 area, which must at least partially include the Locked On enemy. All characters within the area must make an Agility save or take 3 Explosive damage."
+          }
+        ]
+      }
+    ],
+    "description": "Autonomous artillery support is becoming more and more common on the battlefield, as target provision and shot angle calculation become more and more simple for computers to handle. Simply provide a target location, and onboard processing will handle the math."
+  },
+  {
+    "id": "ltcg_rune_suite",
+    "name": "Type-3 Rune Suite",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "actions": [
+      {
+        "name": "Black Ward",
+        "activation": "Invade",
+        "detail": "You create a buzzing field of dark energy around the target, a ward. Any character that hits a warded character with an attack steals the ward, gaining it instead. While the ward is on a hostile character, all attacks against them gain +1 accuracy. While the ward is on an allied character, all attacks against them gain +1 difficulty. The ward dissipates at the start of your next turn."
+      },
+      {
+        "name": "Venting Coruscation",
+        "activation": "Invade",
+        "detail": "At the end of the target’s next turn, any character in Burst 2 of them takes 3 Energy damage. The target takes 1 heat for each character damaged in this way."
+      }
+    ],
+    "description": "The T-3 Rune Suite is one of GMS’s first forays into supplying e-warfare packages, and is markedly not aiming to be a standardised suite for basic use, instead aiming to fill niches in the market. This implementation borrows elements from their T-3 Projected Shield, but Harrison Armory was commissioned to assist with the development of the offensive/directed reactor venting."
+  },
+  {
+    "id": "ltcg_sapper_facility",
+    "name": "Type-3 Sapper Facility",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "Your mech has handy tools suitable for high-intensity repairs. When you Stabilize, choose one adjacent ally. Instead of restoring your own HP or clearing your own Heat, they may spend one of your or their Repairs to restore all their HP, or may clear their Heat and Exposed.",
+    "description": "Externally-mounted independent fabrication facilities, with built-in robotic manipulators, integrated flash welders, and sprayfoam coolant/sealant allow any cavalry squadron to make more efficient use of battle-capable repairs, allowing a team to quickly fix malfunctioning components, repair armor plating, and seal reactor leaks."
+  },
+  {
+    "id": "ltcg_catalyst_stim",
+    "name": "Catalyst Stim",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Davy",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Apply Stim",
+        "activation": "Quick",
+        "detail": "Inject yourself or an adjacent ally with a reactor catalyst. The target gains Resistance to the heat from its next Overcharge."
+      }
+    ],
+    "description": "The Hi-Index RJ-32 Catalyst Payload, or the catalyst stim, as it’s more commonly called, is a chemically-bonded plasticized slug that can be fed into the port of nearly any reactor on the market, instantly improving its efficiency by around 40% for a short period of time. The catalyst is limited in that extended use has proven to cause severe slag build up of certain non-fissile agents, but in short bursts, it can allow pilots to briefly operate beyond their standard specs more safely."
+  },
+  {
+    "id": "ltcg_superspec_cocktail",
+    "name": "Superspec Cocktail",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Davy",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Lob Cocktail",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "detail": "Throw a Fuelbomb within Range 5. All characters within a Blast 1 area must succeed on an Agility save or take 1d6 Kinetic damage. On a success, they take half damage. If at least one target has any Burn marked or is in the Danger Zone, this damage is Burn instead of Kinetic."
+      }
+    ],
+    "description": "There is some argument about whether this item should be used as a weapon. In the specification sheet for the license, it’s listed as a miniaturized Superspec canister, useful for distributing fuel transport among smaller frames to increase efficiency. However, general public opinion is that the container is too small and too fragile to see any serious use as a storage medium. However, it was quickly discovered that overpressurizing the container with fuel allowed it to operate as an impact grenade, made even more potent if its target is aflame."
+  },
+  {
+    "id": "ltcg_adaptive_deflection_system",
+    "name": "Adaptive Deflection System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Davy",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Perfect Stance",
+        "activation": "Protocol",
+        "detail": "You ready yourself against incoming attacks until the start of your next turn. During this time, you are Slowed, and gain the Deflect Blow Reaction, which you may use multiple times per round."
+      },
+      {
+        "name": "Deflect Blow",
+        "activation": "Reaction",
+        "trigger": "You are targeted by a melee attack.",
+        "detail": "Take 1 heat, and make a contested melee attack roll: if you win the contested roll, the triggering attack automatically misses. Your attack roll gains +1 difficulty for each time you've successfully avoided an attack using this reaction since you entered Perfect Stance."
+      }
+    ],
+    "description": "Despite its impressive size, the Davy is capable of a wide range of agile maneuvers, shifting and swaying as it lumbers its way through a fight, tiny adjustments making optimized use of its sloped plating. This systemic package heightens those sub-control reflexes to new degrees, allowing the frame to balance more effectively, and operate limbs in tandem with existing command inputs in order to maximize contact surfaces for deflection."
+  },
+  {
+    "id": "ltcg_the_homebrew",
+    "name": "“The Homebrew”",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Davy",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Apply Booster",
+        "activation": "Quick",
+        "detail": "You or an adjacent ally consume a powerful reactor booster. Until the target ends a turn, it gains the following benefits:<ul><li>It gains +1 accuracy on attacks and saves.</li><li>Its first crit with a weapon attack deals +1d6 bonus damage.</li><li>It can Boost once as a free action.</li><li>Nothing it does triggers reactions for anyone but itself.</li></ul>At the end of its turn, it takes 1d6+2 AP Energy damage, and becomes Slowed until the end of its next turn."
+      }
+    ],
+    "description": "Technically, this dangerous concoction of chemicals is not part of the Davy’s license. By combining Superspec fuel, RJ-32, and a few other commonly available ingredients, this chemical nightmare, nicknamed “The Homebrew”, is produced. When fed into the intake port of most mech reactors, it instantly boosts operational capability beyond safe levels for an exceptionally brief period of time, dramatically increasing the power available to all systems, to the point that fairly catastrophic damage and stress can be caused in weaker reactors. IPS-N has put out statements that it does not condone the use of it, and oddly, all this has done is alert their users to the availability of “The Homebrew”, and savants now consider it to be a boon of the license."
+  },
+  {
+    "id": "ltcg_pathfinder_suite",
+    "name": "Pathfinder Suite",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Ulysses",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Crush Distance",
+        "activation": "Invade",
+        "detail": "You teleport to a space adjacent to the target. You take heat equal to half the distance traveled."
+      },
+      {
+        "name": "Spacemaker",
+        "activation": "Invade",
+        "detail": "You and your target are pushed 4 spaces directly away from each other."
+      }
+    ],
+    "description": "It’s fairly clear to the few initial pilots who have been granted field-test licenses for the Ulysses that the frame and its equipment is “inspired” by the Sunzi. IPS-N is playing a dangerous game by being quite so blatant, as many aspects such as the hand signals and controls are so close as to practically have been reverse-engineered. Clearly, however, it is a game IPS-N is daring to play, or else their age of freight dominance may come to a close."
+  },
+  {
+    "id": "ltcg_blink_momentum",
+    "name": "Blink Momentum",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Ulysses",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Twists and Turns",
+        "activation": "Reaction",
+        "frequency": "1/Round",
+        "trigger": "A character within your sensors is moved involuntarily.",
+        "detail": "You choose the direction of the movement."
+      }
+    ],
+    "description": "The blink is not just a way of hopping from place to place. By applying a shift at just the right instant, momentum itself can be adjusted mid-application, allowing if not for mitigation, at least a small amount of redirection."
+  },
+  {
+    "id": "ltcg_sojourn_domain",
+    "name": "Sojourn Domain",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "3"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Ulysses",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Ithaca",
+        "activation": "Quick Tech",
+        "frequency": "1/round",
+        "detail": "You create a Blast 2 area within Range 10 and line of sight, not expending a charge to do so. If this area already exists, you can expend a charge to teleport all characters wholly within it to your new target location. All characters within remain in their relative positions, and if they cannot occupy their new position due to an obstacle, they are not teleported."
+      }
+    ],
+    "description": "The crown of IPS-N’s initial foray into the mad world of blink technology. It’s clear they have a lot to learn, far removed as the concepts are from their rugged, brute-force style, but given time, even the oldest dog might learn a few new tricks. The shipping trade must adapt, or it will fall by the wayside."
+  },
+  {
+    "id": "ltcg_reaction_optimization",
+    "name": "Reaction Optimization",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Herald",
+    "license_level": 1,
+    "effect": "A character you Bolster can choose to expend it to reduce an instance of Kinetic, Energy, or Explosive damage they take by 1d6 + Grit. Each character can benefit from this only 1/scene.",
+    "description": "A collection of defensive subroutines that a commander can issue to operatives, depending on hostile telemetry. The routines are programmed to fire autonomously in response to precalculated stimuli, a flailed limb to turn a blade aside, or a slight shift to glance a shot from sloped plating."
+  },
+  {
+    "id": "ltcg_commander_matrix",
+    "name": "Commander Matrix",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "3"
+      }
+    ],
+    "source": "SSC",
+    "license": "Herald",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Enhanced Lockdata",
+        "activation": "Reaction",
+        "trigger": "An ally within your Sensors and line of sight consumes a lock on.",
+        "detail": "The ally can choose to forgo an attack roll, and continue as if they had rolled a 10 on the d20. They still roll related accuracy and difficulty, and add any modifiers."
+      }
+    ],
+    "description": "This suite of high-turnover simulation processors allows squadmates to make better use of lock-on data, providing enhanced trajectories, optimized impact angles for penetration, and near-perfect microcorrective aim data. Some pilots claim the simulations prevent them from taking riskier shots and tend toward center-of-mass aiming, but generally, it allows even the smallest, hardest targets to be hit with relative ease."
+  },
+  {
+    "id": "ltcg_deadwing_plating",
+    "name": "Deadwing Plating",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Herald",
+    "license_level": 3,
+    "effect": "You gain +1 Armor, up to the maximum (+4). However, you are always Slowed, and this condition cannot be removed in any way.<br><br>You can violently jettison the plating as a protocol, causing adjacent characters to take 3 Kinetic damage and knocking them back 1 space. This destroys this system, causing you to lose both the Armor and the permanent Slowed.<br><br>If this system is repaired, you regain the Armor and the Slowed condition.",
+    "bonuses": [
+      {
+        "id": "armor",
+        "val": 1
+      }
+    ],
+    "description": "An upgrade that is offered as part of the Herald’s package, after initial reports found that it struggled to hold its own where cocky commanders had decided to place it; in the thick of the fight they were supposed to be coordinating. The deadwing plating is a bulky, heavy system of interlocking scales that severely limit movement, but is attached to the frame on standoff pins that can jettison the plates at a moment’s notice. This allows the frame to keep a balance of sturdiness when it needs it, and speed when it doesn’t."
+  },
+  {
+    "id": "ltcg_wide_band_shuffle_order",
+    "name": "Wide-Band Shuffle Order",
+    "type": "System",
+    "sp": 3,
+    "source": "SSC",
+    "license": "Herald",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Shuffle",
+        "activation": "Quick",
+        "frequency": "1/Round",
+        "detail": "Each ally within Sensors and line of sight can move 2 spaces as a reaction. This movement ignores engagement and does not trigger reactions."
+      }
+    ],
+    "description": "This system comes with additional microprocessing units that must be installed in allied operative’s frames, and cannot be used on anyone that lacks these processing units. Once installed, it creates a mass-spectrum interface network that works in a variety of ways to minorly increase team cohesion. In doing so, it opens a whole team of operatives to general increases in efficacy, particularly in group-maneuvers and movement opportunities. Early adopters have found the chip to be useful, but there are initial concerns about the chip’s requirement that it record all operations; the training data SSC could gain in such a use case would be immeasurable."
+  },
+  {
+    "id": "ltcg_prime_targeting",
+    "name": "Prime Targeting",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Luna",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Nanoshield Prime",
+        "activation": "Invade",
+        "detail": "The target gains Lock On. If the target is hit by a melee or ranged attack before the start of your next turn, the attacker gains 2 + Grit Overshield."
+      },
+      {
+        "name": "Nanoburst Prime",
+        "activation": "Invade",
+        "detail": "The target gains Lock On. If the target is hit by a melee or ranged attack before the start of your next turn, hostile characters in a Burst 2, including the target if they are hostile, take 2 AP Energy damage."
+      }
+    ],
+    "description": "“Carrot, and stick. You see? Sometimes, tactical command is all about giving your soldiers incentive, rather than orders. Opportunity and pride is a greater driver of will than orders and obligations.”<br>- ALbus Vren, Baronic Legion Commander"
+  },
+  {
+    "id": "ltcg_capacitance_shields",
+    "name": "Capacitance Shields",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_limited",
+        "val": "3"
+      }
+    ],
+    "source": "SSC",
+    "license": "Luna",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Apply Shield",
+        "activation": "Quick",
+        "detail": "An allied mech character within Sensors and line of sight gains a capacitance shield until the end of the scene. A character with a capacitance shield cannot gain another, and can use the Field Breach reaction once, losing the shield afterwards."
+      },
+      {
+        "name": "Field Breach",
+        "activation": "Reaction",
+        "trigger": "You take any amount of damage.",
+        "detail": "You gain Overshield equal to 8 + Grit, then apply the damage. This Overshield is lost at the beginning of your next turn."
+      }
+    ],
+    "description": "These devices are a mech-scale implementation of capacitance sparkshields, mounted to a magnetized discus with some in-flight corrective ability. When attached to a frame, they can activate to instantly provide a brief burst force that can turn aside projectiles and impacts, though the effect is quickly lost."
+  },
+  {
+    "id": "ltcg_reactive_mag_leash",
+    "name": "Reactive Mag Leash",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "3"
+      }
+    ],
+    "source": "SSC",
+    "license": "Luna",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Attach Leash",
+        "activation": "Quick",
+        "detail": "Choose an allied character within range 10 and line of sight. They become leashed to you, and stay leashed as long as they remain within range 10 and line of sight. This does not expend a charge."
+      },
+      {
+        "name": "Rescue",
+        "activation": "Reaction",
+        "trigger": "A character leashed to you is hit by an attack or fails an Agility or Hull save.",
+        "detail": "Expend a charge to roll 1d6. On a 4+, you pull them 4 spaces toward you, and if they are pulled at least 1 space, the attack misses or the save is automatically succeeded. On any other number, the ally is still pulled 4 spaces, but the attack still hits, or the save is still failed. The character then ceases to be leashed."
+      }
+    ],
+    "description": "Apparently devised using the Ferrous Lash as a basis, the Reactive Mag Leash was originally designed for zero-gravity trawl and rescue. Its application in combat scenarios has only recently become apparent, surprising hostiles with sudden maneuvers."
+  },
+  {
+    "id": "ltcg_nanobot_censer",
+    "name": "Nanobot Censer",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Luna",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Release Seal",
+        "activation": "Protocol",
+        "detail": "Expend 1 Repair, and regain HP equal to your Grit. Until the start of your next turn, any ally that ends their turn adjacent to you regains HP equal to your Grit."
+      }
+    ],
+    "description": "Another implementation of the weaver drones, although these ones are smaller and less centralized, built for general purpose. Their container is attached to a frame, typically at the waist or upon a weapon, and when the canister is twisted, a cloud of the microdrones is released, instantly patching up the owner and any nearby allies with onboard printfeeds. Similarly, these smaller devices are also concerned in the IPS-N Lawsuit."
+  },
+  {
+    "id": "ltcg_falsehood_revelation",
+    "name": "Falsehood Revelation",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Will-O'-Wisp",
+    "license_level": 1,
+    "effect": "Whenever an attack misses you, you may immediately teleport 1 space in any direction.",
+    "description": "// > you know where you are.<br>// > because you know where you are not."
+  },
+  {
+    "id": "ltcg_echo_drone",
+    "name": "Echo Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Will-O'-Wisp",
+    "license_level": 2,
+    "deployables": [
+      {
+        "name": "Echo Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "Whenever the echo drone is the target of a tech action or an attack that targets E-Defense, instead of affecting the drone, the user can redirect the effect or attack to a new target within line of sight and range 10 of the drone. The new target can be the user of the action, however, doing this instantly destroys the drone after it resolves."
+      }
+    ],
+    "description": "// > it’s interesting. the metal believes whatever i tell it."
+  },
+  {
+    "id": "ltcg_simulation_suite",
+    "name": "Simulation Suite",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": "1"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Will-O'-Wisp",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Project Telemetry",
+        "activation": "Protocol",
+        "detail": "Make a tech attack against a character within Sensors and line of sight. On a success, your first weapon attack before the end of your turn against that character, if it hits, is counted as a crit."
+      }
+    ],
+    "description": "// > You can’t escape.<br>// > I know I’ve already won.<br>// > It’s just a matter of time."
+  },
+  {
+    "id": "ltcg_never_even_here",
+    "name": "Never Even Here",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Will-O'-Wisp",
+    "license_level": 3,
+    "effect": "When it is the players' turn to choose an active character in the first round, and you have not yet had your turn, you may redeploy yourself within range 5 of your deployment area, revealing your true location to be somewhere else entirely, and begin your turn. Your statistics and state are returned to what they were when combat began, and you automatically become Hidden, if possible. You may do this no matter what has happened, as long as this system remains undestroyed.",
+    "description": "// > THEY ARE ALL FOOLS.<br>// > THEY DO NOT KNOW THE GAME.<br>// ><br>// > REMATCH."
+  },
+  {
+    "id": "ltcg_gaias_fist",
+    "name": "Gaia's Fist",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Golem",
+    "license_level": 1,
+    "effect": "You may make an Improvised Attack as a quick action. If you do so, it deals half damage. Additionally, if you have no intact mounted weapons (not including integrated weapons), your Improvised Attacks deal +1d6 damage.",
+    "description": "There is something to be said for brutal simplicity. This barebones modification adds a set of micro-explosives at strategic points on a frame’s limbs, allowing it to cause significant hand-to-hand damage without expending much time or strength."
+  },
+  {
+    "id": "ltcg_decimator_charges",
+    "name": "Decimator Charges",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Golem",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Rumbler Grenade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+3"
+          }
+        ],
+        "detail": "Throw a Rumbler Grenade within Range 5. All characters within a Blast 2 area must pass an Agility save or take 2d6 Explosive damage. On a success, they take half damage. All characters gain +1 accuracy on the save."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Cratermaker Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 3
+          }
+        ],
+        "activation": "Quick",
+        "detail": "A Cratermaker Mine must be stepped on directly to be triggered, rather than adjacent. When triggered, all characters within a Burst 3 area must pass an Agility save or take 2d6+6 Explosive damage. On a success, they take half damage. All characters gain +1 accuracy on the save."
+      }
+    ],
+    "description": "Any weapon designed from mining equipment is going to inherent a certain clunkiness. Decimator charges are something of an epitome of that. Built from deepcore mining spikes, their enormous payload deals immense damage in directed bursts, making them brutally effective when their target is in just the wrong place. They lack motive sensor technology that similar charges do, relying instead on good old-fashioned pressure sensing; thereby making room for more explosives."
+  },
+  {
+    "id": "ltcg_berserk_menace",
+    "name": "Berserk Menace",
+    "type": "System",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Golem",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Instinctive Strike",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An adjacent hostile character targets you or an ally with an attack.",
+        "detail": "Make a melee attack roll against the hostile character, before the attack is made. On a hit, they take 2 Kinetic damage and take +1 difficulty on the triggering attack."
+      }
+    ],
+    "description": "A deep-computing reactionary protocol, allowing a frame to strike before its pilot even knows of danger. The strike is so sudden and unfocused that it rarely causes damage, but even just the threat is enough to shake an opponent into thinking twice. Oddly, parts of this code share similar ancestral memory data to certain Atlas-class frames, purveyed by SSC."
+  },
+  {
+    "id": "ltcg_endless_patience",
+    "name": "Endless Patience",
+    "type": "System",
+    "sp": 1,
+    "source": "HORUS",
+    "license": "Golem",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Calm",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "You or an ally within line of sight is chosen to activate",
+        "detail": "Delay the activation. Play continues with a different allied character activating, and once all characters in the scene have activated, the chosen character takes their turn. If the chosen character is an ally, they must consent to have their turn delayed."
+      }
+    ],
+    "description": "This fairly unusual package is a manual system-wide control lockout, which fully removes a pilots capacity for action until an opportune moment. While activation of the lockout is manual, it is left entirely up to the system when an ‘opportune moment’ is. The usefulness of this system has been questioned, but some pilots swear by it, saying it allows them to calm down and focus. Drawing yet another link between the Golem and the Kobold PGs, this system bears a familiar name hidden in its metadata, “Dog”."
+  },
+  {
+    "id": "ltcg_grave_reconstruction",
+    "name": "Grave Reconstruction",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Golem",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Set Marker",
+        "activation": "Protocol",
+        "detail": "Set down a Gravemarker at your current location (replacing any previous Gravemarkers)."
+      },
+      {
+        "name": "Dust To Dust",
+        "activation": "Quick",
+        "detail": "Teleport to your active Gravemarker. Then, take 1d6 AP Kinetic damage. This damage cannot be reduced in any way."
+      }
+    ],
+    "description": "An extremely unnerving process which causes a frame to tear itself apart, maneuvre the pieces via integrated ion jet propulsion to a predetermined beacon, and reconstruct itself in its original configuration. A pilot is mostly unharmed during this process, and it allows for a frame of any size to return to a safe location at exceptional speed. However, the procedure is extremely mechanically taxing and systemically traumatic, and typically results in some part or other being left behind."
+  },
+  {
+    "id": "ltcg_telemetry_relay_drone",
+    "name": "Telemetry Relay Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_invisible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 1,
+    "effect": "This surveillance drone can be deployed to a space within Sensors and line of sight as a quick action. It can hover. While the drone is within their Sensors, characters allied to the drone can target characters within line of sight of the drone and within range 15 of it with Arcing weapons without suffering penalties from cover, and with regular weapons as if they had Arcing.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Telemetry Relay Drone",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "detail": "This surveillance drone can be deployed to a space within Sensors and line of sight as a quick action. It can hover. While the drone is within their Sensors, characters allied to the drone can target characters within line of sight of the drone and within range 15 of it with Arcing weapons without suffering penalties from cover, and with regular weapons as if they had Arcing."
+      }
+    ],
+    "description": "Equipped with a local-field signature distorter and a full-range LIDAR scan suite, this small drone is capable of transmitting real-time ballistic calculations for optimal payload delivery from point A to point B. Squads can use this information to plot and execute on otherwise improbable projectile trajectories, as the drone is capable of advising some truly extreme shot angles that, nonetheless, often work flawlessly."
+  },
+  {
+    "id": "ltcg_storm_spike",
+    "name": "Storm Spike",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Saturation Grenade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3"
+          }
+        ],
+        "detail": "Throw a Saturation Grenade within range 5. All characters within a Blast 1 area must succeed on an Agility save or take two instances of 3 Energy damage. On a success, they take only one instance of 3 Energy damage."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Hailstorm Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "activation": "Quick",
+        "detail": "Characters within the affected Burst 2 area must succeed on an Agility save or become Shredded until the end of their next turn, and take two instances of 3 Energy damage. On a success, they are not Shredded, and take only one instance of 3 Energy damage."
+      }
+    ],
+    "description": "An example of the Armory's unmatched command of energy. Each spike is cored with a hyperdense capacitor, capable of discharging at extremely high voltage and amps. The spike itself is specifically designed to be especially non-conductive, and an internal chip rotates conductive tesla spikes toward hostile signatures, for maximum arc potential."
+  },
+  {
+    "id": "ltcg_prefire_reactor_protocol",
+    "name": "Pre-Fire Reactor Protocol",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 3,
+    "effect": "When heat caused by you causes you to exceed your heat cap, you can expend a charge as a reaction to ignore all heat over your heat cap, causing you to not overheat or take stress.",
+    "description": "By studying output graphs of high-burst redline reactor usage, Harrison engineers discovered that a fine-tuned pre-action spool up could increase immediate safety, with only a slight increase in long-term mechanical strain. The timing is exceptionally difficult to get right when attempted manually, but this package simplifies matters somewhat by linking the control interface to an internal learning intelligence, which can trace and predict pilot action to make power available when needed."
+  },
+  {
+    "id": "ltcg_stutterstall_reboot",
+    "name": "Stutterstall Reboot",
+    "type": "System",
+    "sp": 1,
+    "source": "HA",
+    "license": "Garcia",
+    "license_level": 1,
+    "effect": "You can Shut Down as a free action, and Boot Up as a quick action. Each time you do either, you take 1d6 Kinetic damage that cannot be reduced.",
+    "description": "“Quit pussyfooting about. It ain’t your grandma, it’s a machine. It does what you want it to, whether it likes it or not.”<br>- Terrence Kreight, Legion Field Commander"
+  },
+  {
+    "id": "ltcg_eburn_package",
+    "name": "E-Burn Package",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Garcia",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Disable Suppression",
+        "activation": "Invade",
+        "detail": "The target automatically fails its next Engineering check to clear Burn, unless they pass an Engineering check as a Quick action."
+      },
+      {
+        "name": "High-Spool Flash",
+        "activation": "Invade",
+        "detail": "The target is counted as being in the Danger Zone until the end of its next turn, even if their current heat is not half or more of their maximum."
+      }
+    ],
+    "description": "Harrison Armory are experts in the mechanics of cold-core reactors designed for mechanized warfare, which gives them as much advantage in their smooth operation as in their precise destruction. This light package targets a standard weakness in most reactor's runaway prevention hardware, causing frames to briefly lose track of how hot their core is actually running."
+  },
+  {
+    "id": "ltcg_surtur_class_nhp",
+    "name": "SURTUR-Class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "HA",
+    "license": "Garcia",
+    "license_level": 3,
+    "effect": "Your mech gains the AI tag and the SURTUR Protocol.",
+    "actions": [
+      {
+        "name": "SURTUR Protocol",
+        "activation": "Protocol",
+        "detail": "Expend a charge, and set your reactor into overdrive. You take 1 heat, and the first attack roll you make on your turn deals heat equal to the heat you took. At the start of each of your following turns, you take heat equal to the heat you took at the start of last turn +1, and continue to deal additional heat equal to the heat taken on the first attack roll each turn. This effect continues until you clear all heat or take stress, or until the end of the scene."
+      }
+    ],
+    "description": "Clones of the SURTUR-class NHP are rare, and with decent reason. While normally cold, business-like, and pragmatic, there are moments, when tensions are high, that they seem to shift to a violent, sadistic nature. So far, this nature seems more directed toward hostile targets, rather than allies or its pilot, but it is vaguely disconcerting to be raining bullets and hellfire upon an opponent to the sound of deep, vindictive chuckling from your co-pilot."
+  },
+  {
+    "id": "ltcg_engine_killer",
+    "name": "Engine Killer",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Garcia",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Force Shut Down",
+        "activation": "Quick Tech",
+        "detail": "Make a tech attack against a character within line of sight and Sensors. The target must make an Engineering save, or they Shut Down. Characters can willingly fail this save, and NPCs automatically clear Shut Down at the end of their turn. This can only be used once per scene on each character."
+      }
+    ],
+    "description": "Only the Armory could develop such a dense, rigorously tested code package as this with such a simple, ruinous purpose. It cuts into the firmware like a surgeon’s knife, and yanks a few important things loose, forcing a full system shutdown. It’s been known to be used in HA testing facilities, where reactors are often pushed to their very limits, and driven into irreversible runaway."
+  },
+  {
+    "id": "ltcg_script_kiddie_suite_1",
+    "name": "Script Kiddie Suite I",
+    "talent_item": true,
+    "talent_id": "ltcg_script_kiddie",
+    "talent_rank": 1,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied.",
+    "actions": [
+      {
+        "name": "Burnout",
+        "activation": "Invade",
+        "detail": "If your target's current HP is 5 or less, they take 1 Structure damage. If not, they become Shredded until they take Structure damage, or until the end of their next turn."
+      },
+      {
+        "name": "Hot Target",
+        "activation": "Invade",
+        "detail": "Your target gains Lock On. Until the end of your next turn, whenever this Lock On would be consumed, you may take 2 heat to cause it not to be removed."
+      },
+      {
+        "name": "Clothesline",
+        "activation": "Invade",
+        "detail": "At the end of your turn, the target is pushed 1 space in a direction of your choice, falls Prone, and becomes Immobilized until the end of their next turn."
+      }
+    ],
+    "description": "Gained from the <i>Script Kiddie: Rank I</i> pilot talent.",
+    "license_id": ""
+  },
+  {
+    "id": "ltcg_script_kiddie_suite_2",
+    "name": "Script Kiddie Suite II",
+    "talent_item": true,
+    "talent_id": "ltcg_script_kiddie",
+    "talent_rank": 2,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied. Additionally, whenever you use one of these Invade options, you may choose one of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul>",
+    "actions": [
+      {
+        "name": "Burnout",
+        "activation": "Invade",
+        "detail": "If your target's current HP is 5 or less, they take 1 Structure damage. If not, they become Shredded until they take Structure damage, or until the end of their next turn."
+      },
+      {
+        "name": "Hot Target",
+        "activation": "Invade",
+        "detail": "Your target gains Lock On. Until the end of your next turn, whenever this Lock On would be consumed, you may take 2 heat to cause it not to be removed."
+      },
+      {
+        "name": "Clothesline",
+        "activation": "Invade",
+        "detail": "At the end of your turn, the target is pushed 1 space in a direction of your choice, falls Prone, and becomes Immobilized until the end of their next turn."
+      }
+    ],
+    "description": "Gained from the <i>Script Kiddie: Rank II</i> pilot talent.",
+    "license_id": ""
+  },
+  {
+    "id": "ltcg_script_kiddie_suite_3",
+    "name": "Script Kiddie Suite III",
+    "talent_item": true,
+    "talent_id": "ltcg_script_kiddie",
+    "talent_rank": 2,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied. Additionally, whenever you use one of these Invade options, you may choose two of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul>",
+    "actions": [
+      {
+        "name": "Burnout",
+        "activation": "Invade",
+        "detail": "If your target's current HP is 5 or less, they take 1 Structure damage. If not, they become Shredded until they take Structure damage, or until the end of their next turn."
+      },
+      {
+        "name": "Hot Target",
+        "activation": "Invade",
+        "detail": "Your target gains Lock On. Until the end of your next turn, whenever this Lock On would be consumed, you may take 2 heat to cause it not to be removed."
+      },
+      {
+        "name": "Clothesline",
+        "activation": "Invade",
+        "detail": "At the end of your turn, the target is pushed 1 space in a direction of your choice, falls Prone, and becomes Immobilized until the end of their next turn."
+      }
+    ],
+    "description": "Gained from the <i>Script Kiddie: Rank III</i> pilot talent.",
+    "license_id": ""
+  }
+]
