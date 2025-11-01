@@ -353,7 +353,7 @@
         "name": "Shuffle",
         "activation": "Quick",
         "frequency": "1/Round",
-        "detail": "Each ally within Sensors and line of sight can move 2 spaces as a reaction. This movement ignores engagement and does not trigger reactions."
+        "detail": "Each ally within Sensors and line of sight can take 1 heat and move 2 spaces as a reaction. This movement ignores engagement and does not trigger reactions."
       }
     ],
     "description": "This system comes with additional microprocessing units that must be installed in allied operative’s frames, and cannot be used on anyone that lacks these processing units. Once installed, it creates a mass-spectrum interface network that works in a variety of ways to minorly increase team cohesion. In doing so, it opens a whole team of operatives to general increases in efficacy, particularly in group-maneuvers and movement opportunities. Early adopters have found the chip to be useful, but there are initial concerns about the chip’s requirement that it record all operations; the training data SSC could gain in such a use case would be immeasurable."
@@ -571,7 +571,7 @@
     "source": "HORUS",
     "license": "Golem",
     "license_level": 1,
-    "effect": "You may make an Improvised Attack as a quick action. If you do so, it deals half damage. Additionally, if you have no intact mounted weapons (not including integrated weapons), your Improvised Attacks deal +1d6 damage.",
+    "effect": "You may make an Improvised Attack as a quick action. If you do so, it deals half damage. Additionally, if you have no intact mounted weapons (not including integrated weapons), your Improvised Attacks deal +1d6 damage. This works even if you choose not to mount weapons at all.",
     "description": "There is something to be said for brutal simplicity. This barebones modification adds a set of micro-explosives at strategic points on a frame’s limbs, allowing it to cause significant hand-to-hand damage without expending much time or strength."
   },
   {
@@ -614,7 +614,7 @@
             "val": "1d6+3"
           }
         ],
-        "detail": "Throw a Rumbler Grenade within Range 5. All characters within a Blast 2 area must pass an Agility save or take 2d6 Explosive damage. On a success, they take half damage. All characters gain +1 accuracy on the save."
+        "detail": "Throw a Rumbler Grenade within Range 5. All characters within a Blast 2 area must pass an Agility save or take 1d6+3 Explosive damage. On a success, they take half damage. All characters gain +1 accuracy on the save."
       }
     ],
     "deployables": [
@@ -635,7 +635,7 @@
   },
   {
     "id": "ltcg_berserk_menace",
-    "name": "Berserk Menace",
+    "name": "Sudden Retribution",
     "type": "System",
     "sp": 2,
     "source": "HORUS",
@@ -806,7 +806,15 @@
     "source": "HA",
     "license": "Jünger",
     "license_level": 3,
-    "effect": "When heat caused by you causes you to exceed your heat cap, you can expend a charge as a reaction to ignore all heat over your heat cap, causing you to not overheat or take stress.",
+    "actions": [
+      {
+        "name": "Pre-Spool",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "Heat caused by you results in you exceeding your heat cap.",
+        "detail": "Expend a charge. You ignore all heat over your heat cap, causing you to not overheat or take stress."
+      }
+    ],
     "description": "By studying output graphs of high-burst redline reactor usage, Harrison engineers discovered that a fine-tuned pre-action spool up could increase immediate safety, with only a slight increase in long-term mechanical strain. The timing is exceptionally difficult to get right when attempted manually, but this package simplifies matters somewhat by linking the control interface to an internal learning intelligence, which can trace and predict pilot action to make power available when needed."
   },
   {
@@ -915,7 +923,7 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied.",
+    "effect": "Level 1: Gain access to three powerful invade options. Each Invade option uses a charge when applied.",
     "actions": [
       {
         "name": "Burnout",
@@ -952,7 +960,7 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied. Additionally, whenever you use one of these Invade options, you may choose one of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul>",
+    "effect": "Level 1: Gain access to three powerful invade options. Each Invade option uses a charge when applied.<br>Level 2: Additionally, whenever you use one of these Invade options, you may choose one of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul>",
     "actions": [
       {
         "name": "Burnout",
@@ -989,7 +997,7 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "Gain access to three powerful invade options. Each Invade option uses a charge when applied. Additionally, whenever you use one of these Invade options, you may choose two of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul>",
+    "effect": "Level 1: Gain access to three powerful invade options. Each Invade option uses a charge when applied.<br> Level 2: Additionally, whenever you use one of these Invade options, you may choose one of the following effects to apply.</li><li>Coolant Denial: The target takes 1 heat.</li><li>Overvolt: The target takes 2 AP Energy damage.</li><li>Deep Strike: The next damage the target takes cannot be reduced.</li><li>Shard Gesture: The target becomes Impaired or Slowed, you choose which, until the end of their next turn.</li></ul><br>Level 3: You may choose two of the effects instead of one.",
     "actions": [
       {
         "name": "Burnout",

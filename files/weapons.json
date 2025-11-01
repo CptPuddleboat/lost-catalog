@@ -386,7 +386,7 @@
         "damage": [
             {
                 "type": "Explosive",
-                "val": "1d6+7"
+                "val": "1d6+6"
             }
         ],
         "range": [
@@ -401,7 +401,7 @@
             },
             {
                 "id": "tg_knockback",
-                "val": 3
+                "val": 2
             }
         ],
         "source": "HORUS",

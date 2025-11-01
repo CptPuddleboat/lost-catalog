@@ -9,7 +9,7 @@
         },
         "locked": false,
         "type": "Weapon",
-        "effect": "This weapon automatically hits and deals no damage to wrecks.",
+        "effect": "A character or loose object smaller than the Factory that is hit by this weapon is pulled in a straight line until they meet an obstruction, or are adjacent to the Factory. This weapon automatically hits and deals no damage to wrecks.",
         "tags": [],
         "weapon_type": "Heavy Cannon",
         "attack_bonus": [
@@ -209,6 +209,8 @@
             {
                 "type": "Energy",
                 "damage": [
+                    5,
+                    5,
                     5
                 ]
             }

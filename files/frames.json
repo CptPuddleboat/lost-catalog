@@ -61,7 +61,7 @@
       "activation": "Protocol",
       "active_effect": "You can take this protocol even if you normally could not due to a condition. You clear all non-self-inflicted conditions, your Superspec Fuel Canister regains 2 charges, and until the end of the scene, you gain twice as much Overshield with Numb, including now."
     },
-    "image_url": "https://i.imgur.com/fFLwrx8.png",
+    "image_url": "https://i.postimg.cc/XJfv3zP9/token8.png",
     "y_pos": 15
   },
   {
@@ -73,7 +73,7 @@
       "Striker"
     ],
     "license_level": 2,
-    "description": "IPS-N is often seen as something of a limp and dogmatic relic when compared to the mighty system-spanning colonies of its rivals, of SSC and HA. Their worlds are mighty and vast, a testament to human ingenuity and determination, and an endless test of the boundaries for what we may become. Humans across the galaxy have homes on distant planets, and mighty armies array to fight and conquer the land, sea, and sky.<br>But where others might own the ground they walk on, IPS-N owns the stars.<br>For centuries, their services have been the means by which these colonies are born. No supply ship passes any vast distance without an IPS-N hand being involved, not if it wishes to arrive in one piece, or at all. No journey is too long, or hard, or dangerous.<br>But the recent rumor is that journeys will be a thing of the past. SSC has experiemented with commercialized military-fielded blink tech with their Mourning Cloak line, and extracted Volador technology has leaped Armory understanding of the blink forward by several decades. Their prototype vessels have been sighted along the Dawnline and beyond, in the Long Rim, appearing and disappearing, without need or want of blink gates. And of course, there is the limited field-test of the Sunzi.<br>The Ulysses is IPS-N’s answer. A proof that they are game to play catch-up in this fight for celestial dominance. If anyone is going to be known for great journeys made safely, let it be IPS-N.",
+    "description": "IPS-N is often seen as something of a limp and dogmatic relic when compared to the mighty system-spanning colonies of its rivals, of SSC and HA. Their worlds are mighty and vast, a testament to human ingenuity and determination, and an endless test of the boundaries for what we may become. Humans across the galaxy have homes on distant planets, and mighty armies array to fight and conquer the land, sea, and sky.<br>But where others might own the ground they walk on, IPS-N owns the stars.<br>For centuries, their services have been the means by which these colonies are born. No supply ship passes any vast distance without an IPS-N hand being involved, not if it wishes to arrive in one piece, or at all. No journey is too long, or hard, or dangerous.<br>But the recent rumor is that journeys will be a thing of the past. SSC has experimented with commercialized military-fielded blink tech with their Mourning Cloak line, and extracted Volador technology has leaped Armory understanding of the blink forward by several decades. Their prototype vessels have been sighted along the Dawnline and beyond, in the Long Rim, appearing and disappearing, without need or want of blink gates. And of course, there is the limited field-test of the Sunzi.<br>The Ulysses is IPS-N’s answer. A proof that they are game to play catch-up in this fight for celestial dominance. If anyone is going to be known for great journeys made safely, let it be IPS-N.",
     "mounts": [
       "Main/Aux"
     ],
@@ -112,7 +112,7 @@
       "activation": "Protocol",
       "active_effect": "Choose up to three allies within Sensors. They each disappear from the battlefield. At the beginning of their next turn, they reappear in a space adjacent to you. Reappearing counts as teleportation."
     },
-    "image_url": "https://i.imgur.com/QG0YuOP.png",
+    "image_url": "https://i.postimg.cc/d3JV09M5/token7.png",
     "y_pos": 17
   },
   {
@@ -147,7 +147,7 @@
     "traits": [
       {
         "name": "Banner Signal",
-        "description": "1/round, when the Herald performs a Boost, Skirmish, Ram, Grapple, or Quick Tech, it can choose an ally within Sensors and line of sight. That character may perform the action instead of the Herald as a reaction. The Herald still uses a quick action, and counts as taking the action for the purposes of duplicate action restrictions."
+        "description": "1/round, when the Herald performs a Boost, Skirmish, Ram, Grapple, or Quick Tech, it can choose an ally within Sensors and line of sight. That character may perform the action instead of the Herald as a reaction. The Herald still uses a quick action, and counts as taking the action for the purposes of duplicate action restrictions, but does not count as taking a hostile action even if its causes another character to take a hostile action."
       },
       {
         "name": "Inspiring Memetics",
@@ -161,7 +161,7 @@
       "activation": "Free",
       "active_effect": "The next time you use Banner Signal, you can either take the action yourself alongside your target, or select a second target to perform the chosen action. This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used."
     },
-    "image_url": "https://i.imgur.com/jzx6m7I.png",
+    "image_url": "https://i.postimg.cc/D07wzcVj/token6.png",
     "y_pos": 42
   },
   {
@@ -215,7 +215,7 @@
       "activation": "Full",
       "active_effect": "New weaver drones are sent out to follow all allies within Sensors, and remain until the end of the scene. These drones cannot be recalled and do not return when increasing the HP restored, and allies gain no additional benefit from having multiple groups of drones following them."
     },
-    "image_url": "https://i.imgur.com/Btd3SnS.png",
+    "image_url": "https://i.postimg.cc/D07wzcVB/token5.png",
     "y_pos": 23
   },
   {
@@ -270,7 +270,7 @@
         "ltcg_willowisp_integrated_blade"
       ]
     },
-    "image_url": "https://i.imgur.com/qea8cLm.png",
+    "image_url": "https://i.postimg.cc/0j9yNCgf/token4.png",
     "y_pos": 27
   },
   {
@@ -331,7 +331,7 @@
       "active_effect": "Until the end of the scene, characters within your Sensors who target an ally with an attack must make a Systems save. On a fail, they target you instead, if possible. If not possible, they attack the ally as normal, but at +1 difficulty.",
       "activation": "Protocol"
     },
-    "image_url": "https://i.imgur.com/iDrfVFR.png",
+    "image_url": "https://i.postimg.cc/WzSbqJTP/token3.png",
     "y_pos": 25
   },
   {
@@ -367,7 +367,7 @@
     "traits": [
       {
         "name": "Charged Cloak",
-        "description": "When the Jünger Overcharges, it gains Overshield equal to 2 + Grit."
+        "description": "When the Jünger Overcharges, it gains Overshield equal to 1 + Grit."
       },
       {
         "name": "Overwhelming Fire",
@@ -378,12 +378,12 @@
       "name": "Tachyon Projector",
       "description": "By strategically tuning tachyon loop frequencies, they can remain stable when cast out to a fairly distant range. Specialized even further, a similar effect to that performed by NOAH-class NHPs allows an operative to “ricochet” their projectile weaponry around corners, giving the Jünger exceptional tactical ability in high-cover scenarios.",
       "passive_name": "Trick Shot",
-      "passive_effect": "You can draw range and line-of-sight for any ranged weapon attack you make from anywhere within range 3 and line-of-sight. Hostile characters in a Line between you and this origin point take 1 AP Energy damage.",
+      "passive_effect": "You can draw range and line-of-sight for any ranged weapon attack you make from a free space within range 3 and line-of-sight. Hostile characters in a Line between you and this origin point take 1 Energy damage.",
       "active_name": "Heightened Projection",
       "active_effect": "Until the end of the scene, Trick Shot becomes range 6 instead of range 3.",
       "activation": "Protocol"
     },
-    "image_url": "https://i.imgur.com/mIUcNVr.png",
+    "image_url": "https://i.postimg.cc/D05y4bFC/token1.png",
     "y_pos": 8
   },
   {
@@ -433,7 +433,7 @@
       "active_effect": "Choose up to 3 wrecks within Sensors. Each wreck jerks to brief life, is pushed up to 4 spaces in a direction of your choice, and then explodes in a Burst 2 area that deals 4d6 Explosive damage, vaporizing the wreck and anyone still in it. Characters caught in the explosion that succeed on an Agility save take half of this damage. Characters only make one save against this effect, even if they are in range of multiple explosions. For each explosion past the first the character is within, they take +1 difficulty on the save.",
       "activation": "Full"
     },
-    "image_url": "https://i.imgur.com/gXzgXVH.png",
+    "image_url": "https://i.postimg.cc/nrTc9QZP/token2.png",
     "y_pos": 30
   }
 ]
