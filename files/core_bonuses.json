@@ -44,7 +44,7 @@
     "id": "ltcg_superposition",
     "name": "Superposition",
     "source": "HORUS",
-    "effect": "1/scene, at the end of your turn, you may teleport back to where you started the turn.",
+    "effect": "1/scene, at the end of your turn, you may teleport back to where you started the turn. You may then immediately perform one quick action as a free action.",
     "description": "In its simplest form, paracausality is the inverse of our typical understanding of the nature of our universe. Where there is first a cause, there must then be an effect. However, we know now that, under certain conditions, effects can be produced for which, against all reason, no direct cause may be found, at least, not upon our mundane plane of reality. That, in essence, is paracausality. - Extract from “Outside The Firelight”, by Dr. Glenn Morrow"
   },
   {
