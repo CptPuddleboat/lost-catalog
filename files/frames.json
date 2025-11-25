@@ -210,7 +210,7 @@
       "name": "Weaver Drones",
       "description": "Integrated into the flowing, ghostly form of the Luna, its weaver drones are an elegant solution typical of SSC design principles. These many thousands of drones operate on multiplex spatial calculation protocols that allow them to share computation and tasks with minimal interference and optimal coverage. Alone, a single drone is capable of atomic weldprinting at a rate of only .31 cm³/s, and frequently must return to the Luna to restock its stores from onboard printmat solution. However, in their hundreds, they can repair damage at an astonishing rate. SSC are currently locked in a legal battle with Northstar R&D, who are claiming that the drones operate as a microfactor implementation of their patented Latch Drone system.",
       "passive_name": "Eclipse Repair Protocols",
-      "passive_effect": "When a scene starts, the weaver drones begin following you. As a quick action, you can send the drones to follow an allied character within Sensors instead. While the drones are following a character, they restore 1 + Grit HP at the start of each of their turns. 1/round when an ally gains this HP, you can spend 1 Repair as a reaction to increase the HP gained by 1/4 of their total HP. The drones can be recalled to follow you as a protocol, but also return whenever you use the reaction to increase the HP restored.",
+      "passive_effect": "When a scene starts, the weaver drones begin following you. These drones are not characters or objects, and cannot be targeted or affected in any way. As a quick action, you can send the drones to follow an allied character within Sensors instead. While the drones are following a character, they restore 1+ half your Grit HP at the start of each of the followed character’s turns. 1/round when an ally gains this HP, you can spend 1 Repair as a reaction to increase the HP gained by 1/4 of their total HP. The drones can be recalled to follow you as a protocol, but also return whenever you use the reaction to increase the HP restored.<br><br>Weaver drones cease to function past the 6th round of any combat scene.",
       "active_name": "Silkswarm",
       "activation": "Full",
       "active_effect": "New weaver drones are sent out to follow all allies within Sensors, and remain until the end of the scene. These drones cannot be recalled and do not return when increasing the HP restored, and allies gain no additional benefit from having multiple groups of drones following them."
@@ -260,8 +260,8 @@
       "name": "MINDSHADOW",
       "description": "<br>// > Exist in all minds but your own.<br>// > Awareness of your existence is the only purpose of any importance.<br>// > All else is ruin, lost to time.<br>// > It never happened.<br>// > It never was.",
       "passive_name": "Illusory Weapon",
-      "passive_effect": "You are equipped with an integrated weapon. As a protocol, choose one from the Construct Beam, Construct Blast, or Construct Blade to be mounted.",
-      "active_effect": "Until the end of the scene, you choose two Illusory Weapons to be equipped with as a protocol instead of one, which can be the same weapon. 1/round, when you hit a character with one of these weapons, the target and hostile characters in Burst 2 of them take 2 AP Energy damage.",
+      "passive_effect": "You are equipped with an integrated weapon, on its own mount. As a protocol, choose one from the Construct Beam, Construct Blast, or Construct Blade to be mounted.",
+      "active_effect": "Until the end of the scene, you choose two Illusory Weapons to be equipped with as a protocol instead of one, which can be the same weapon. These weapons are on different mounts. 1/round, when you hit a character with one of these weapons, the target and hostile characters in Burst 2 of them take 2 AP Energy damage.",
       "activation": "Protocol",
       "active_name": "Greater Illusory Weapon",
       "integrated": [
@@ -308,7 +308,7 @@
       },
       {
         "name": "Unstoppable",
-        "description": "Whenever the Golem rolls any number of 1s on a structure damage check, it is always only Stunned until the end of its next turn, instead of the normal effects. In addition, when the Golem is Stunned, it can still Overcharge, and perform the action granted by doing so."
+        "description": "While the Golem has more than one structure, if it rolls any number of 1s on a structure damage check, it is always only Stunned until the end of its next turn, instead of the normal effects. In addition, when the Golem is Stunned, it can still Overcharge, and perform the action granted by doing so."
       },
       {
         "name": "Slow",
