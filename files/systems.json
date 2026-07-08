@@ -699,7 +699,7 @@
     "description": "An extremely unnerving process which causes a frame to tear itself apart, maneuvre the pieces via integrated ion jet propulsion to a predetermined beacon, and reconstruct itself in its original configuration. A pilot is mostly unharmed during this process, and it allows for a frame of any size to return to a safe location at exceptional speed. However, the procedure is extremely mechanically taxing and systemically traumatic, and typically results in some part or other being left behind."
   },
   {
-    "id": "ltcg_telemetry_relay_drone",
+    "id": "ltcg_telemetry_relay_drone_a",
     "name": "Telemetry Relay Drone",
     "type": "Drone",
     "sp": 2,
@@ -712,7 +712,7 @@
       }
     ],
     "source": "HA",
-    "license": "Jünger",
+    "license": "Colt",
     "license_level": 1,
     "effect": "This surveillance drone can be deployed to a space within Sensors and line of sight as a quick action. It can hover. While the drone is within their Sensors, characters allied to the drone can target characters within line of sight of the drone and within range 15 of it with Arcing weapons without suffering penalties from cover, and with regular weapons as if they had Arcing.",
     "deployables": [
@@ -731,7 +731,7 @@
     "description": "Equipped with a local-field signature distorter and a full-range LIDAR scan suite, this small drone is capable of transmitting real-time ballistic calculations for optimal payload delivery from point A to point B. Squads can use this information to plot and execute on otherwise improbable projectile trajectories, as the drone is capable of advising some truly extreme shot angles that, nonetheless, often work flawlessly."
   },
   {
-    "id": "ltcg_storm_spike",
+    "id": "ltcg_storm_spike_a",
     "name": "Storm Spike",
     "type": "Deployable",
     "sp": 2,
@@ -748,7 +748,7 @@
       }
     ],
     "source": "HA",
-    "license": "Jünger",
+    "license": "Colt",
     "license_level": 1,
     "actions": [
       {
@@ -804,7 +804,7 @@
       }
     ],
     "source": "HA",
-    "license": "Jünger",
+    "license": "Colt",
     "license_level": 3,
     "actions": [
       {
@@ -1017,5 +1017,127 @@
     ],
     "description": "Gained from the <i>Script Kiddie: Rank III</i> pilot talent.",
     "license_id": ""
+  },
+  {
+    "id": "ltcg_telemetry_relay_drone",
+    "deprecated": true,
+    "name": "Telemetry Relay Drone",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_invisible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 1,
+    "effect": "This surveillance drone can be deployed to a space within Sensors and line of sight as a quick action. It can hover. While the drone is within their Sensors, characters allied to the drone can target characters within line of sight of the drone and within range 15 of it with Arcing weapons without suffering penalties from cover, and with regular weapons as if they had Arcing.",
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "Telemetry Relay Drone",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "detail": "This surveillance drone can be deployed to a space within Sensors and line of sight as a quick action. It can hover. While the drone is within their Sensors, characters allied to the drone can target characters within line of sight of the drone and within range 15 of it with Arcing weapons without suffering penalties from cover, and with regular weapons as if they had Arcing."
+      }
+    ],
+    "description": "Equipped with a local-field signature distorter and a full-range LIDAR scan suite, this small drone is capable of transmitting real-time ballistic calculations for optimal payload delivery from point A to point B. Squads can use this information to plot and execute on otherwise improbable projectile trajectories, as the drone is capable of advising some truly extreme shot angles that, nonetheless, often work flawlessly."
+  },
+  {
+    "id": "ltcg_storm_spike",
+    "deprecated": true,
+    "name": "Storm Spike",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Saturation Grenade",
+        "activation": "Quick",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3"
+          }
+        ],
+        "detail": "Throw a Saturation Grenade within range 5. All characters within a Blast 1 area must succeed on an Agility save or take two instances of 3 Energy damage. On a success, they take only one instance of 3 Energy damage."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Hailstorm Mine",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "activation": "Quick",
+        "detail": "Characters within the affected Burst 2 area must succeed on an Agility save or become Shredded until the end of their next turn, and take two instances of 3 Energy damage. On a success, they are not Shredded, and take only one instance of 3 Energy damage."
+      }
+    ],
+    "description": "An example of the Armory's unmatched command of energy. Each spike is cored with a hyperdense capacitor, capable of discharging at extremely high voltage and amps. The spike itself is specifically designed to be especially non-conductive, and an internal chip rotates conductive tesla spikes toward hostile signatures, for maximum arc potential."
+  },
+  {
+    "id": "ltcg_prefire_reactor_protocol",
+    "deprecated": true,
+    "name": "Pre-Fire Reactor Protocol",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Jünger",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Pre-Spool",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "Heat caused by you results in you exceeding your heat cap.",
+        "detail": "Expend a charge. You ignore all heat over your heat cap, causing you to not overheat or take stress."
+      }
+    ],
+    "description": "By studying output graphs of high-burst redline reactor usage, Harrison engineers discovered that a fine-tuned pre-action spool up could increase immediate safety, with only a slight increase in long-term mechanical strain. The timing is exceptionally difficult to get right when attempted manually, but this package simplifies matters somewhat by linking the control interface to an internal learning intelligence, which can trace and predict pilot action to make power available when needed."
   }
 ]

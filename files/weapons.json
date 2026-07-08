@@ -411,7 +411,7 @@
         "description": "Another piece of repurposed mining equipment, this time based on the explosive sledgehammers used for extreme demolition. By shortening the handle and fine-tuning the repeatable explosive devices, the hammer can be made into quite a precise weapon capable of dealing ruinous damage. Its size, however, makes it an awkward object to wield in even the largest hands."
     },
     {
-        "id": "ltcg_brontes_arc_caster",
+        "id": "ltcg_brontes_arc_caster_a",
         "name": "Brontes Arc Caster",
         "mount": "Main",
         "type": "Launcher",
@@ -478,12 +478,12 @@
             }
         ],
         "source": "HA",
-        "license": "Jünger",
+        "license": "Colt",
         "license_level": 2,
         "description": "A reworked implementation of the plasma containment and projection procedures developed as part of the Tokugawa-pattern research, the arc caster alters the intended effect-on-target from the original design. In place of a short-range wide-pattern blast of superheated plasma, the Brontes instead utilizes a supercapacitive gas mixture to store and maintain a charge, which is then launched with high-precision electro-magnetic rails. High-voltage operation is possible, especially when supplied by Harrison-brand mech reactors."
     },
     {
-        "id": "ltcg_rotary_autopistol",
+        "id": "ltcg_rotary_autopistol_a",
         "name": "Rotary Autopistol",
         "mount": "Auxiliary",
         "type": "CQB",
@@ -514,7 +514,7 @@
         ],
         "effect": "This weapon is automatically reloaded whenever you Overcharge.",
         "source": "HA",
-        "license": "Jünger",
+        "license": "Colt",
         "license_level": 2,
         "description": "A unique experimentation into alternate projectile-launching systems, this weapon makes use of a high-speed internal centrifugal drum to launch hyperdense pellets. Each pellet shot reduces the overall speed available, until the motor must be recharged manually, but by tying the motion direction to the internal reactor coil through sympathetic nano-linkages, a well-timed overspool of the reactor can return the weapon to full-power operation."
     },
@@ -733,5 +733,115 @@
             }
         ],
         "license_id": ""
+    },
+    {
+        "id": "ltcg_brontes_arc_caster",
+        "deprecated": true,
+        "name": "Brontes Arc Caster",
+        "mount": "Main",
+        "type": "Launcher",
+        "profiles": [
+            {
+                "name": "Standard",
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": "2d3"
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 10
+                    }
+                ],
+                "effect": "You may charge this weapon as a quick action. While charged, any attack made with it uses the Charged profile.",
+                "tags": [
+                    {
+                        "id": "tg_ap"
+                    },
+                    {
+                        "id": "tg_heat_self",
+                        "val": 1
+                    }
+                ],
+                "actions": [
+                    {
+                        "name": "Charge Arc Caster",
+                        "activation": "Quick",
+                        "detail": "Supply greater power to the launcher, making the next attack use its \"Charged\" profile."
+                    }
+                ]
+            },
+            {
+                "name": "Charged",
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": "2d3+5"
+                    }
+                ],
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 15
+                    }
+                ],
+                "on_attack": "This weapon becomes uncharged, whether the attack hit or missed.",
+                "tags": [
+                    {
+                        "id": "tg_overkill"
+                    },
+                    {
+                        "id": "tg_ap"
+                    },
+                    {
+                        "id": "tg_heat_self",
+                        "val": 2
+                    }
+                ]
+            }
+        ],
+        "source": "HA",
+        "license": "Jünger",
+        "license_level": 2,
+        "description": "A reworked implementation of the plasma containment and projection procedures developed as part of the Tokugawa-pattern research, the arc caster alters the intended effect-on-target from the original design. In place of a short-range wide-pattern blast of superheated plasma, the Brontes instead utilizes a supercapacitive gas mixture to store and maintain a charge, which is then launched with high-precision electro-magnetic rails. High-voltage operation is possible, especially when supplied by Harrison-brand mech reactors."
+    },
+    {
+        "id": "ltcg_rotary_autopistol",
+        "deprecated": true,
+        "name": "Rotary Autopistol",
+        "mount": "Auxiliary",
+        "type": "CQB",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": "1d3+2"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_heat_self",
+                "val": 1
+            }
+        ],
+        "effect": "This weapon is automatically reloaded whenever you Overcharge.",
+        "source": "HA",
+        "license": "Jünger",
+        "license_level": 2,
+        "description": "A unique experimentation into alternate projectile-launching systems, this weapon makes use of a high-speed internal centrifugal drum to launch hyperdense pellets. Each pellet shot reduces the overall speed available, until the motor must be recharged manually, but by tying the motion direction to the internal reactor coil through sympathetic nano-linkages, a well-timed overspool of the reactor can return the weapon to full-power operation."
     }
 ]

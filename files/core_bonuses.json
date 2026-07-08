@@ -10,8 +10,8 @@
     "id": "ltcg_modernisations",
     "name": "Modernisations",
     "source": "IPS-N",
-    "effect": "If your frame's base tech attack is negative, it becomes 0. You gain +1 on all tech attacks.",
-    "description": "With so much of its roster rooted in tradition, IPS-N have to make special effort to drag their line into the 6th millenium. This general-purpose package includes a universal e-warfare modem which, while bulky and awkward in classic Northstar style, is more than enough to bring any sub-par frame into line with modern offensive systems doctrine."
+    "effect": "If your tech attack attribute is lower than 0, you do not add it to your tech attack rolls. If your final roll would have difficulty, you roll it at no difficulty instead.",
+    "description": "With so much of its roster rooted in tradition, IPS-N have to make special effort to drag their line into the 6th millenium. This general-purpose package includes a universal e-warfare modem which, while bulky and awkward in classic Northstar style, is in a sweet-spot of being suitably outmoded enough to slip past many modern defenses."
   },
   {
     "id": "ltcg_smoothpass_lattice",
@@ -35,7 +35,7 @@
     "description": "Open your eyes. Then, open your eyes again.",
     "bonuses": [
       {
-        "id": "sensor_range",
+        "id": "sensor",
         "val": 3
       }
     ]
