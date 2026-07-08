@@ -13,7 +13,9 @@
       "changes": [
         "Updated to support V3",
         "Renamed the Jünger license to the Colt",
-        "Changed IPS-N's Modernisations core bonus to be more universal and less awkward"
+        "Changed IPS-N's Modernisations core bonus to be more universal and less awkward",
+        "Edited Luna's core power to not be permanent",
+        "Colt now has a passive to add bonus damage to aux attacks"
       ]
     }
   ]
